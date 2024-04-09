@@ -17,16 +17,16 @@ public class LightService extends LightServiceGrpc.LightServiceImplBase {
     private Map<String, Boolean> lightStatusMap = new HashMap<>();
     private boolean energySavingMode = false;
 
-    @Override
+
     public void getLightStatus(LightProto.GetLightStatusRequest request, StreamObserver<LightProto.LightStatus> responseObserver) {
         String name = request.getName();
         boolean isOn = lightStatusMap.getOrDefault(name, false);
-        smartclassroom.LightProto.LightStatus = LightProto.LightStatus.newBuilder().setName(name).setIsOn(isOn).build();
+        LightProto.LightStatus LightStatus = LightProto.LightStatus.newBuilder().setName(name).setIsOn(isOn).build();
         responseObserver.onNext(LightStatus);
         responseObserver.onCompleted();
     }
 
-    @Override
+
     public void controlLight(LightProto.ControlLightRequest request, StreamObserver<LightProto.LightControlResponse> responseObserver) {
         String name = request.getName();
         boolean turnOn = request.getTurnOn();
@@ -37,7 +37,7 @@ public class LightService extends LightServiceGrpc.LightServiceImplBase {
         responseObserver.onCompleted();
     }
 
-    @Override
+
     public void monitorLightStream(Empty request, StreamObserver<LightStatus> responseObserver) {
         for (Map.Entry<String, Boolean> entry : lightStatusMap.entrySet()) {
             LightStatus lightStatus = LightStatus.newBuilder().setName(entry.getKey()).setIsOn(entry.getValue()).build();
@@ -46,7 +46,7 @@ public class LightService extends LightServiceGrpc.LightServiceImplBase {
         responseObserver.onCompleted();
     }
 
-    @Override
+
     public StreamObserver<BoolValue> energySavingOptimization(StreamObserver<Empty> responseObserver) {
         return new StreamObserver<BoolValue>() {
             @Override

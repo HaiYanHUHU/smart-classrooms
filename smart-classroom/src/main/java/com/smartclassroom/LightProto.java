@@ -760,7 +760,7 @@ public final class LightProto {
       }
 
       @Override
-      public smartclassroom.LightProto.LightStatus build() {
+      public LightStatus build() {
         smartclassroom.LightProto.LightStatus result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
@@ -1804,7 +1804,7 @@ public final class LightProto {
       }
 
       @Override
-      public smartclassroom.LightProto.LightControlResponse build() {
+      public LightControlResponse build() {
         smartclassroom.LightProto.LightControlResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
