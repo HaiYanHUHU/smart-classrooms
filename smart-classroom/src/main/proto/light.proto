@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+option java_outer_classname = "LightProto";
 package smartclassroom;
 
 // 定义灯的服务接口

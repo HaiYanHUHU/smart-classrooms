@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option java_outer_classname = "ProjectorProto";
+
 package smartclassroom;
 
 // 定义投影仪的服务接口
