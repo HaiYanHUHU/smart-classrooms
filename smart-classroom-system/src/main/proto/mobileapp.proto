@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package smartclassroom;
+
+// 定义移动应用的服务接口
+service MobileAppService {
+    // 显示灯和投影仪的状态
+    rpc ShowStatus (ShowStatusRequest) returns (ShowStatusResponse) {}
+    // 控制灯和投影仪
+    rpc ControlDevices (stream ControlDevicesRequest) returns (ControlDevicesResponse) {}
+}
+
+// 显示状态请求消息
+message ShowStatusRequest {}
+
+// 显示状态响应消息
+message ShowStatusResponse {
+    repeated DeviceStatus devices_status = 1;
+
+    message DeviceStatus {
+        string name = 1;
+        bool is_on = 2;
+    }
+}
+
+// 控制设备请求消息
+message ControlDevicesRequest {
+    string device_name = 1;
+    bool turn_on = 2;
+}
+
+// 控制设备响应消息
+message ControlDevicesResponse {
+    bool success = 1;
+}

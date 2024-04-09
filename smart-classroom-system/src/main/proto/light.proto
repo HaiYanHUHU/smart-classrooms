@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package smartclassroom;
+
+// 定义灯的服务接口
+service LightService {
+    // 获取灯的状态
+    rpc GetLightStatus (GetLightStatusRequest) returns (LightStatus) {}
+    // 控制灯的开关
+    rpc ControlLight (ControlLightRequest) returns (LightControlResponse) {}
+    // 实时监控灯的状态
+    rpc MonitorLightStream (stream MonitorLightRequest) returns (stream LightStatus) {}
+}
+
+// 获取灯状态请求消息
+message GetLightStatusRequest {}
+
+// 灯状态响应消息
+message LightStatus {
+    string name = 1;
+    bool is_on = 2;
+}
+
+// 控制灯请求消息
+message ControlLightRequest {
+    bool turn_on = 1;
+}
+
+// 控制灯响应消息
+message LightControlResponse {
+    bool success = 1;
+}
+
+// 实时监控灯状态请求消息
+message MonitorLightRequest {}

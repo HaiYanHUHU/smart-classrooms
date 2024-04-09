@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package smartclassroom;
+
+// 定义投影仪的服务接口
+service ProjectorService {
+    // 获取投影仪的状态
+    rpc GetProjectorStatus (GetProjectorStatusRequest) returns (ProjectorStatus) {}
+    // 控制投影仪的开关
+    rpc ControlProjector (ControlProjectorRequest) returns (ProjectorControlResponse) {}
+    // 实时监控投影仪的状态
+    rpc MonitorProjectorStream (stream MonitorProjectorRequest) returns (stream ProjectorStatus) {}
+}
+
+// 获取投影仪状态请求消息
+message GetProjectorStatusRequest {}
+
+// 投影仪状态响应消息
+message ProjectorStatus {
+    string name = 1;
+    bool is_on = 2;
+}
+
+// 控制投影仪请求消息
+message ControlProjectorRequest {
+    bool turn_on = 1;
+}
+
+// 控制投影仪响应消息
+message ProjectorControlResponse {
+    bool success = 1;
+}
+
+// 实时监控投影仪状态请求消息
+message MonitorProjectorRequest {}
