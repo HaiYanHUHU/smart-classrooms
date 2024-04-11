@@ -37,33 +37,33 @@ public final class ProjectorProto {
     private GetProjectorStatusRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new GetProjectorStatusRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_fieldAccessorTable
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.ProjectorProto.GetProjectorStatusRequest.class, smartclassroom.ProjectorProto.GetProjectorStatusRequest.Builder.class);
+              com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.class, com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -73,13 +73,13 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -90,21 +90,21 @@ public final class ProjectorProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.ProjectorProto.GetProjectorStatusRequest)) {
+      if (!(obj instanceof com.smartclassroom.ProjectorProto.GetProjectorStatusRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.ProjectorProto.GetProjectorStatusRequest other = (smartclassroom.ProjectorProto.GetProjectorStatusRequest) obj;
+      com.smartclassroom.ProjectorProto.GetProjectorStatusRequest other = (com.smartclassroom.ProjectorProto.GetProjectorStatusRequest) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -116,69 +116,69 @@ public final class ProjectorProto {
       return hash;
     }
 
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(byte[] data)
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseDelimitedFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -186,23 +186,23 @@ public final class ProjectorProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.ProjectorProto.GetProjectorStatusRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.ProjectorProto.GetProjectorStatusRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -216,124 +216,124 @@ public final class ProjectorProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.GetProjectorStatusRequest)
-        smartclassroom.ProjectorProto.GetProjectorStatusRequestOrBuilder {
+        com.smartclassroom.ProjectorProto.GetProjectorStatusRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_fieldAccessorTable
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.ProjectorProto.GetProjectorStatusRequest.class, smartclassroom.ProjectorProto.GetProjectorStatusRequest.Builder.class);
+                com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.class, com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.ProjectorProto.GetProjectorStatusRequest.newBuilder()
+      // Construct using com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_GetProjectorStatusRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstanceForType() {
-        return smartclassroom.ProjectorProto.GetProjectorStatusRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstanceForType() {
+        return com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.GetProjectorStatusRequest build() {
-        smartclassroom.ProjectorProto.GetProjectorStatusRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.GetProjectorStatusRequest build() {
+        com.smartclassroom.ProjectorProto.GetProjectorStatusRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.GetProjectorStatusRequest buildPartial() {
-        smartclassroom.ProjectorProto.GetProjectorStatusRequest result = new smartclassroom.ProjectorProto.GetProjectorStatusRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.GetProjectorStatusRequest buildPartial() {
+        com.smartclassroom.ProjectorProto.GetProjectorStatusRequest result = new com.smartclassroom.ProjectorProto.GetProjectorStatusRequest(this);
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.ProjectorProto.GetProjectorStatusRequest) {
-          return mergeFrom((smartclassroom.ProjectorProto.GetProjectorStatusRequest)other);
+        if (other instanceof com.smartclassroom.ProjectorProto.GetProjectorStatusRequest) {
+          return mergeFrom((com.smartclassroom.ProjectorProto.GetProjectorStatusRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.ProjectorProto.GetProjectorStatusRequest other) {
-        if (other == smartclassroom.ProjectorProto.GetProjectorStatusRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.ProjectorProto.GetProjectorStatusRequest other) {
+        if (other == com.smartclassroom.ProjectorProto.GetProjectorStatusRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -358,13 +358,13 @@ public final class ProjectorProto {
         } // finally
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -375,18 +375,18 @@ public final class ProjectorProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.GetProjectorStatusRequest)
-    private static final smartclassroom.ProjectorProto.GetProjectorStatusRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.ProjectorProto.GetProjectorStatusRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.ProjectorProto.GetProjectorStatusRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.ProjectorProto.GetProjectorStatusRequest();
     }
 
-    public static smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstance() {
+    public static com.smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetProjectorStatusRequest>
         PARSER = new com.google.protobuf.AbstractParser<GetProjectorStatusRequest>() {
-      @Override
+      @java.lang.Override
       public GetProjectorStatusRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -410,13 +410,13 @@ public final class ProjectorProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<GetProjectorStatusRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.ProjectorProto.GetProjectorStatusRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -430,7 +430,7 @@ public final class ProjectorProto {
      * <code>string name = 1;</code>
      * @return The name.
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>string name = 1;</code>
      * @return The bytes for name.
@@ -464,46 +464,46 @@ public final class ProjectorProto {
       name_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ProjectorStatus();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_fieldAccessorTable
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.ProjectorProto.ProjectorStatus.class, smartclassroom.ProjectorProto.ProjectorStatus.Builder.class);
+              com.smartclassroom.ProjectorProto.ProjectorStatus.class, com.smartclassroom.ProjectorProto.ProjectorStatus.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     /**
      * <code>string name = 1;</code>
      * @return The name.
      */
-    @Override
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -512,14 +512,14 @@ public final class ProjectorProto {
      * <code>string name = 1;</code>
      * @return The bytes for name.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -533,13 +533,13 @@ public final class ProjectorProto {
      * <code>bool is_on = 2;</code>
      * @return The isOn.
      */
-    @Override
+    @java.lang.Override
     public boolean getIsOn() {
       return isOn_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -549,7 +549,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -561,7 +561,7 @@ public final class ProjectorProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -579,15 +579,15 @@ public final class ProjectorProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.ProjectorProto.ProjectorStatus)) {
+      if (!(obj instanceof com.smartclassroom.ProjectorProto.ProjectorStatus)) {
         return super.equals(obj);
       }
-      smartclassroom.ProjectorProto.ProjectorStatus other = (smartclassroom.ProjectorProto.ProjectorStatus) obj;
+      com.smartclassroom.ProjectorProto.ProjectorStatus other = (com.smartclassroom.ProjectorProto.ProjectorStatus) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -597,7 +597,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -614,69 +614,69 @@ public final class ProjectorProto {
       return hash;
     }
 
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(byte[] data)
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseDelimitedFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -684,23 +684,23 @@ public final class ProjectorProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.ProjectorProto.ProjectorStatus prototype) {
+    public static Builder newBuilder(com.smartclassroom.ProjectorProto.ProjectorStatus prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -714,31 +714,31 @@ public final class ProjectorProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ProjectorStatus)
-        smartclassroom.ProjectorProto.ProjectorStatusOrBuilder {
+        com.smartclassroom.ProjectorProto.ProjectorStatusOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_fieldAccessorTable
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.ProjectorProto.ProjectorStatus.class, smartclassroom.ProjectorProto.ProjectorStatus.Builder.class);
+                com.smartclassroom.ProjectorProto.ProjectorStatus.class, com.smartclassroom.ProjectorProto.ProjectorStatus.Builder.class);
       }
 
-      // Construct using smartclassroom.ProjectorProto.ProjectorStatus.newBuilder()
+      // Construct using com.smartclassroom.ProjectorProto.ProjectorStatus.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         name_ = "";
@@ -748,79 +748,79 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorStatus_descriptor;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstanceForType() {
-        return smartclassroom.ProjectorProto.ProjectorStatus.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstanceForType() {
+        return com.smartclassroom.ProjectorProto.ProjectorStatus.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorStatus build() {
-        smartclassroom.ProjectorProto.ProjectorStatus result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorStatus build() {
+        com.smartclassroom.ProjectorProto.ProjectorStatus result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorStatus buildPartial() {
-        smartclassroom.ProjectorProto.ProjectorStatus result = new smartclassroom.ProjectorProto.ProjectorStatus(this);
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorStatus buildPartial() {
+        com.smartclassroom.ProjectorProto.ProjectorStatus result = new com.smartclassroom.ProjectorProto.ProjectorStatus(this);
         result.name_ = name_;
         result.isOn_ = isOn_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.ProjectorProto.ProjectorStatus) {
-          return mergeFrom((smartclassroom.ProjectorProto.ProjectorStatus)other);
+        if (other instanceof com.smartclassroom.ProjectorProto.ProjectorStatus) {
+          return mergeFrom((com.smartclassroom.ProjectorProto.ProjectorStatus)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.ProjectorProto.ProjectorStatus other) {
-        if (other == smartclassroom.ProjectorProto.ProjectorStatus.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.ProjectorProto.ProjectorStatus other) {
+        if (other == com.smartclassroom.ProjectorProto.ProjectorStatus.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
@@ -833,18 +833,18 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -880,21 +880,21 @@ public final class ProjectorProto {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>string name = 1;</code>
        * @return The name.
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -903,11 +903,11 @@ public final class ProjectorProto {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -920,7 +920,7 @@ public final class ProjectorProto {
        * @return This builder for chaining.
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -961,7 +961,7 @@ public final class ProjectorProto {
        * <code>bool is_on = 2;</code>
        * @return The isOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getIsOn() {
         return isOn_;
       }
@@ -986,13 +986,13 @@ public final class ProjectorProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1003,18 +1003,18 @@ public final class ProjectorProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ProjectorStatus)
-    private static final smartclassroom.ProjectorProto.ProjectorStatus DEFAULT_INSTANCE;
+    private static final com.smartclassroom.ProjectorProto.ProjectorStatus DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.ProjectorProto.ProjectorStatus();
+      DEFAULT_INSTANCE = new com.smartclassroom.ProjectorProto.ProjectorStatus();
     }
 
-    public static smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstance() {
+    public static com.smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ProjectorStatus>
         PARSER = new com.google.protobuf.AbstractParser<ProjectorStatus>() {
-      @Override
+      @java.lang.Override
       public ProjectorStatus parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1038,13 +1038,13 @@ public final class ProjectorProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ProjectorStatus> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.ProjectorProto.ProjectorStatus getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1079,29 +1079,29 @@ public final class ProjectorProto {
     private ControlProjectorRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ControlProjectorRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_fieldAccessorTable
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.ProjectorProto.ControlProjectorRequest.class, smartclassroom.ProjectorProto.ControlProjectorRequest.Builder.class);
+              com.smartclassroom.ProjectorProto.ControlProjectorRequest.class, com.smartclassroom.ProjectorProto.ControlProjectorRequest.Builder.class);
     }
 
     public static final int TURN_ON_FIELD_NUMBER = 1;
@@ -1110,13 +1110,13 @@ public final class ProjectorProto {
      * <code>bool turn_on = 1;</code>
      * @return The turnOn.
      */
-    @Override
+    @java.lang.Override
     public boolean getTurnOn() {
       return turnOn_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1126,7 +1126,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (turnOn_ != false) {
@@ -1135,7 +1135,7 @@ public final class ProjectorProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1150,15 +1150,15 @@ public final class ProjectorProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.ProjectorProto.ControlProjectorRequest)) {
+      if (!(obj instanceof com.smartclassroom.ProjectorProto.ControlProjectorRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.ProjectorProto.ControlProjectorRequest other = (smartclassroom.ProjectorProto.ControlProjectorRequest) obj;
+      com.smartclassroom.ProjectorProto.ControlProjectorRequest other = (com.smartclassroom.ProjectorProto.ControlProjectorRequest) obj;
 
       if (getTurnOn()
           != other.getTurnOn()) return false;
@@ -1166,7 +1166,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1181,69 +1181,69 @@ public final class ProjectorProto {
       return hash;
     }
 
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(byte[] data)
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseDelimitedFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1251,23 +1251,23 @@ public final class ProjectorProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.ProjectorProto.ControlProjectorRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.ProjectorProto.ControlProjectorRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1281,31 +1281,31 @@ public final class ProjectorProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ControlProjectorRequest)
-        smartclassroom.ProjectorProto.ControlProjectorRequestOrBuilder {
+        com.smartclassroom.ProjectorProto.ControlProjectorRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_fieldAccessorTable
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.ProjectorProto.ControlProjectorRequest.class, smartclassroom.ProjectorProto.ControlProjectorRequest.Builder.class);
+                com.smartclassroom.ProjectorProto.ControlProjectorRequest.class, com.smartclassroom.ProjectorProto.ControlProjectorRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.ProjectorProto.ControlProjectorRequest.newBuilder()
+      // Construct using com.smartclassroom.ProjectorProto.ControlProjectorRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         turnOn_ = false;
@@ -1313,78 +1313,78 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ControlProjectorRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstanceForType() {
-        return smartclassroom.ProjectorProto.ControlProjectorRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstanceForType() {
+        return com.smartclassroom.ProjectorProto.ControlProjectorRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ControlProjectorRequest build() {
-        smartclassroom.ProjectorProto.ControlProjectorRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ControlProjectorRequest build() {
+        com.smartclassroom.ProjectorProto.ControlProjectorRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ControlProjectorRequest buildPartial() {
-        smartclassroom.ProjectorProto.ControlProjectorRequest result = new smartclassroom.ProjectorProto.ControlProjectorRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ControlProjectorRequest buildPartial() {
+        com.smartclassroom.ProjectorProto.ControlProjectorRequest result = new com.smartclassroom.ProjectorProto.ControlProjectorRequest(this);
         result.turnOn_ = turnOn_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.ProjectorProto.ControlProjectorRequest) {
-          return mergeFrom((smartclassroom.ProjectorProto.ControlProjectorRequest)other);
+        if (other instanceof com.smartclassroom.ProjectorProto.ControlProjectorRequest) {
+          return mergeFrom((com.smartclassroom.ProjectorProto.ControlProjectorRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.ProjectorProto.ControlProjectorRequest other) {
-        if (other == smartclassroom.ProjectorProto.ControlProjectorRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.ProjectorProto.ControlProjectorRequest other) {
+        if (other == com.smartclassroom.ProjectorProto.ControlProjectorRequest.getDefaultInstance()) return this;
         if (other.getTurnOn() != false) {
           setTurnOn(other.getTurnOn());
         }
@@ -1393,18 +1393,18 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1440,7 +1440,7 @@ public final class ProjectorProto {
        * <code>bool turn_on = 1;</code>
        * @return The turnOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getTurnOn() {
         return turnOn_;
       }
@@ -1465,13 +1465,13 @@ public final class ProjectorProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1482,18 +1482,18 @@ public final class ProjectorProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ControlProjectorRequest)
-    private static final smartclassroom.ProjectorProto.ControlProjectorRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.ProjectorProto.ControlProjectorRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.ProjectorProto.ControlProjectorRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.ProjectorProto.ControlProjectorRequest();
     }
 
-    public static smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstance() {
+    public static com.smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ControlProjectorRequest>
         PARSER = new com.google.protobuf.AbstractParser<ControlProjectorRequest>() {
-      @Override
+      @java.lang.Override
       public ControlProjectorRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1517,13 +1517,13 @@ public final class ProjectorProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ControlProjectorRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.ProjectorProto.ControlProjectorRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1558,29 +1558,29 @@ public final class ProjectorProto {
     private ProjectorControlResponse() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ProjectorControlResponse();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_fieldAccessorTable
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.ProjectorProto.ProjectorControlResponse.class, smartclassroom.ProjectorProto.ProjectorControlResponse.Builder.class);
+              com.smartclassroom.ProjectorProto.ProjectorControlResponse.class, com.smartclassroom.ProjectorProto.ProjectorControlResponse.Builder.class);
     }
 
     public static final int SUCCESS_FIELD_NUMBER = 1;
@@ -1589,13 +1589,13 @@ public final class ProjectorProto {
      * <code>bool success = 1;</code>
      * @return The success.
      */
-    @Override
+    @java.lang.Override
     public boolean getSuccess() {
       return success_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1605,7 +1605,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (success_ != false) {
@@ -1614,7 +1614,7 @@ public final class ProjectorProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1629,15 +1629,15 @@ public final class ProjectorProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.ProjectorProto.ProjectorControlResponse)) {
+      if (!(obj instanceof com.smartclassroom.ProjectorProto.ProjectorControlResponse)) {
         return super.equals(obj);
       }
-      smartclassroom.ProjectorProto.ProjectorControlResponse other = (smartclassroom.ProjectorProto.ProjectorControlResponse) obj;
+      com.smartclassroom.ProjectorProto.ProjectorControlResponse other = (com.smartclassroom.ProjectorProto.ProjectorControlResponse) obj;
 
       if (getSuccess()
           != other.getSuccess()) return false;
@@ -1645,7 +1645,7 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1660,69 +1660,69 @@ public final class ProjectorProto {
       return hash;
     }
 
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(byte[] data)
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseDelimitedFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1730,23 +1730,23 @@ public final class ProjectorProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.ProjectorProto.ProjectorControlResponse prototype) {
+    public static Builder newBuilder(com.smartclassroom.ProjectorProto.ProjectorControlResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1760,31 +1760,31 @@ public final class ProjectorProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ProjectorControlResponse)
-        smartclassroom.ProjectorProto.ProjectorControlResponseOrBuilder {
+        com.smartclassroom.ProjectorProto.ProjectorControlResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_fieldAccessorTable
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.ProjectorProto.ProjectorControlResponse.class, smartclassroom.ProjectorProto.ProjectorControlResponse.Builder.class);
+                com.smartclassroom.ProjectorProto.ProjectorControlResponse.class, com.smartclassroom.ProjectorProto.ProjectorControlResponse.Builder.class);
       }
 
-      // Construct using smartclassroom.ProjectorProto.ProjectorControlResponse.newBuilder()
+      // Construct using com.smartclassroom.ProjectorProto.ProjectorControlResponse.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         success_ = false;
@@ -1792,78 +1792,78 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_ProjectorControlResponse_descriptor;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstanceForType() {
-        return smartclassroom.ProjectorProto.ProjectorControlResponse.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstanceForType() {
+        return com.smartclassroom.ProjectorProto.ProjectorControlResponse.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorControlResponse build() {
-        smartclassroom.ProjectorProto.ProjectorControlResponse result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorControlResponse build() {
+        com.smartclassroom.ProjectorProto.ProjectorControlResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.ProjectorControlResponse buildPartial() {
-        smartclassroom.ProjectorProto.ProjectorControlResponse result = new smartclassroom.ProjectorProto.ProjectorControlResponse(this);
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.ProjectorControlResponse buildPartial() {
+        com.smartclassroom.ProjectorProto.ProjectorControlResponse result = new com.smartclassroom.ProjectorProto.ProjectorControlResponse(this);
         result.success_ = success_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.ProjectorProto.ProjectorControlResponse) {
-          return mergeFrom((smartclassroom.ProjectorProto.ProjectorControlResponse)other);
+        if (other instanceof com.smartclassroom.ProjectorProto.ProjectorControlResponse) {
+          return mergeFrom((com.smartclassroom.ProjectorProto.ProjectorControlResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.ProjectorProto.ProjectorControlResponse other) {
-        if (other == smartclassroom.ProjectorProto.ProjectorControlResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.ProjectorProto.ProjectorControlResponse other) {
+        if (other == com.smartclassroom.ProjectorProto.ProjectorControlResponse.getDefaultInstance()) return this;
         if (other.getSuccess() != false) {
           setSuccess(other.getSuccess());
         }
@@ -1872,18 +1872,18 @@ public final class ProjectorProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1919,7 +1919,7 @@ public final class ProjectorProto {
        * <code>bool success = 1;</code>
        * @return The success.
        */
-      @Override
+      @java.lang.Override
       public boolean getSuccess() {
         return success_;
       }
@@ -1944,13 +1944,13 @@ public final class ProjectorProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1961,18 +1961,18 @@ public final class ProjectorProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ProjectorControlResponse)
-    private static final smartclassroom.ProjectorProto.ProjectorControlResponse DEFAULT_INSTANCE;
+    private static final com.smartclassroom.ProjectorProto.ProjectorControlResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.ProjectorProto.ProjectorControlResponse();
+      DEFAULT_INSTANCE = new com.smartclassroom.ProjectorProto.ProjectorControlResponse();
     }
 
-    public static smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstance() {
+    public static com.smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ProjectorControlResponse>
         PARSER = new com.google.protobuf.AbstractParser<ProjectorControlResponse>() {
-      @Override
+      @java.lang.Override
       public ProjectorControlResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1996,13 +1996,13 @@ public final class ProjectorProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ProjectorControlResponse> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.ProjectorProto.ProjectorControlResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2031,33 +2031,33 @@ public final class ProjectorProto {
     private MonitorProjectorRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new MonitorProjectorRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_fieldAccessorTable
+      return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.ProjectorProto.MonitorProjectorRequest.class, smartclassroom.ProjectorProto.MonitorProjectorRequest.Builder.class);
+              com.smartclassroom.ProjectorProto.MonitorProjectorRequest.class, com.smartclassroom.ProjectorProto.MonitorProjectorRequest.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2067,13 +2067,13 @@ public final class ProjectorProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2084,21 +2084,21 @@ public final class ProjectorProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.ProjectorProto.MonitorProjectorRequest)) {
+      if (!(obj instanceof com.smartclassroom.ProjectorProto.MonitorProjectorRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.ProjectorProto.MonitorProjectorRequest other = (smartclassroom.ProjectorProto.MonitorProjectorRequest) obj;
+      com.smartclassroom.ProjectorProto.MonitorProjectorRequest other = (com.smartclassroom.ProjectorProto.MonitorProjectorRequest) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2110,69 +2110,69 @@ public final class ProjectorProto {
       return hash;
     }
 
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(byte[] data)
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseDelimitedFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2180,23 +2180,23 @@ public final class ProjectorProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.ProjectorProto.MonitorProjectorRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.ProjectorProto.MonitorProjectorRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2210,124 +2210,124 @@ public final class ProjectorProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.MonitorProjectorRequest)
-        smartclassroom.ProjectorProto.MonitorProjectorRequestOrBuilder {
+        com.smartclassroom.ProjectorProto.MonitorProjectorRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_fieldAccessorTable
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.ProjectorProto.MonitorProjectorRequest.class, smartclassroom.ProjectorProto.MonitorProjectorRequest.Builder.class);
+                com.smartclassroom.ProjectorProto.MonitorProjectorRequest.class, com.smartclassroom.ProjectorProto.MonitorProjectorRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.ProjectorProto.MonitorProjectorRequest.newBuilder()
+      // Construct using com.smartclassroom.ProjectorProto.MonitorProjectorRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
+        return com.smartclassroom.ProjectorProto.internal_static_smartclassroom_MonitorProjectorRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstanceForType() {
-        return smartclassroom.ProjectorProto.MonitorProjectorRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstanceForType() {
+        return com.smartclassroom.ProjectorProto.MonitorProjectorRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.MonitorProjectorRequest build() {
-        smartclassroom.ProjectorProto.MonitorProjectorRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.MonitorProjectorRequest build() {
+        com.smartclassroom.ProjectorProto.MonitorProjectorRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.ProjectorProto.MonitorProjectorRequest buildPartial() {
-        smartclassroom.ProjectorProto.MonitorProjectorRequest result = new smartclassroom.ProjectorProto.MonitorProjectorRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.ProjectorProto.MonitorProjectorRequest buildPartial() {
+        com.smartclassroom.ProjectorProto.MonitorProjectorRequest result = new com.smartclassroom.ProjectorProto.MonitorProjectorRequest(this);
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.ProjectorProto.MonitorProjectorRequest) {
-          return mergeFrom((smartclassroom.ProjectorProto.MonitorProjectorRequest)other);
+        if (other instanceof com.smartclassroom.ProjectorProto.MonitorProjectorRequest) {
+          return mergeFrom((com.smartclassroom.ProjectorProto.MonitorProjectorRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.ProjectorProto.MonitorProjectorRequest other) {
-        if (other == smartclassroom.ProjectorProto.MonitorProjectorRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.ProjectorProto.MonitorProjectorRequest other) {
+        if (other == com.smartclassroom.ProjectorProto.MonitorProjectorRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -2352,13 +2352,13 @@ public final class ProjectorProto {
         } // finally
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2369,18 +2369,18 @@ public final class ProjectorProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.MonitorProjectorRequest)
-    private static final smartclassroom.ProjectorProto.MonitorProjectorRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.ProjectorProto.MonitorProjectorRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.ProjectorProto.MonitorProjectorRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.ProjectorProto.MonitorProjectorRequest();
     }
 
-    public static smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstance() {
+    public static com.smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<MonitorProjectorRequest>
         PARSER = new com.google.protobuf.AbstractParser<MonitorProjectorRequest>() {
-      @Override
+      @java.lang.Override
       public MonitorProjectorRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2404,13 +2404,13 @@ public final class ProjectorProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MonitorProjectorRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.ProjectorProto.MonitorProjectorRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2449,7 +2449,7 @@ public final class ProjectorProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\017projector.proto\022\016smartclassroom\"\033\n\031Get" +
       "ProjectorStatusRequest\".\n\017ProjectorStatu" +
       "s\022\014\n\004name\030\001 \001(\t\022\r\n\005is_on\030\002 \001(\010\"*\n\027Contro" +
@@ -2463,8 +2463,9 @@ public final class ProjectorProto {
       "rRequest\032(.smartclassroom.ProjectorContr" +
       "olResponse\"\000\022h\n\026MonitorProjectorStream\022\'" +
       ".smartclassroom.MonitorProjectorRequest\032" +
-      "\037.smartclassroom.ProjectorStatus\"\000(\0010\001B\020" +
-      "B\016ProjectorProtob\006proto3"
+      "\037.smartclassroom.ProjectorStatus\"\000(\0010\001B&" +
+      "\n\022com.smartclassroomB\016ProjectorProtoP\000b\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2475,31 +2476,31 @@ public final class ProjectorProto {
     internal_static_smartclassroom_GetProjectorStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_GetProjectorStatusRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_smartclassroom_ProjectorStatus_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_smartclassroom_ProjectorStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ProjectorStatus_descriptor,
-        new String[] { "Name", "IsOn", });
+        new java.lang.String[] { "Name", "IsOn", });
     internal_static_smartclassroom_ControlProjectorRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_smartclassroom_ControlProjectorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ControlProjectorRequest_descriptor,
-        new String[] { "TurnOn", });
+        new java.lang.String[] { "TurnOn", });
     internal_static_smartclassroom_ProjectorControlResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_smartclassroom_ProjectorControlResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ProjectorControlResponse_descriptor,
-        new String[] { "Success", });
+        new java.lang.String[] { "Success", });
     internal_static_smartclassroom_MonitorProjectorRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_smartclassroom_MonitorProjectorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_MonitorProjectorRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

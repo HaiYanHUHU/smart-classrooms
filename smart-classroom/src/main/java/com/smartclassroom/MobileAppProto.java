@@ -37,33 +37,33 @@ public final class MobileAppProto {
     private ShowStatusRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ShowStatusRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_fieldAccessorTable
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.MobileAppProto.ShowStatusRequest.class, smartclassroom.MobileAppProto.ShowStatusRequest.Builder.class);
+              com.smartclassroom.MobileAppProto.ShowStatusRequest.class, com.smartclassroom.MobileAppProto.ShowStatusRequest.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -73,13 +73,13 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -90,21 +90,21 @@ public final class MobileAppProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.MobileAppProto.ShowStatusRequest)) {
+      if (!(obj instanceof com.smartclassroom.MobileAppProto.ShowStatusRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.MobileAppProto.ShowStatusRequest other = (smartclassroom.MobileAppProto.ShowStatusRequest) obj;
+      com.smartclassroom.MobileAppProto.ShowStatusRequest other = (com.smartclassroom.MobileAppProto.ShowStatusRequest) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -116,69 +116,69 @@ public final class MobileAppProto {
       return hash;
     }
 
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(byte[] data)
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseDelimitedFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -186,23 +186,23 @@ public final class MobileAppProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.MobileAppProto.ShowStatusRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.MobileAppProto.ShowStatusRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -216,124 +216,124 @@ public final class MobileAppProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ShowStatusRequest)
-        smartclassroom.MobileAppProto.ShowStatusRequestOrBuilder {
+        com.smartclassroom.MobileAppProto.ShowStatusRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_fieldAccessorTable
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.MobileAppProto.ShowStatusRequest.class, smartclassroom.MobileAppProto.ShowStatusRequest.Builder.class);
+                com.smartclassroom.MobileAppProto.ShowStatusRequest.class, com.smartclassroom.MobileAppProto.ShowStatusRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.MobileAppProto.ShowStatusRequest.newBuilder()
+      // Construct using com.smartclassroom.MobileAppProto.ShowStatusRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstanceForType() {
-        return smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstanceForType() {
+        return com.smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusRequest build() {
-        smartclassroom.MobileAppProto.ShowStatusRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusRequest build() {
+        com.smartclassroom.MobileAppProto.ShowStatusRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusRequest buildPartial() {
-        smartclassroom.MobileAppProto.ShowStatusRequest result = new smartclassroom.MobileAppProto.ShowStatusRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusRequest buildPartial() {
+        com.smartclassroom.MobileAppProto.ShowStatusRequest result = new com.smartclassroom.MobileAppProto.ShowStatusRequest(this);
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.MobileAppProto.ShowStatusRequest) {
-          return mergeFrom((smartclassroom.MobileAppProto.ShowStatusRequest)other);
+        if (other instanceof com.smartclassroom.MobileAppProto.ShowStatusRequest) {
+          return mergeFrom((com.smartclassroom.MobileAppProto.ShowStatusRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.MobileAppProto.ShowStatusRequest other) {
-        if (other == smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.MobileAppProto.ShowStatusRequest other) {
+        if (other == com.smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -358,13 +358,13 @@ public final class MobileAppProto {
         } // finally
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -375,18 +375,18 @@ public final class MobileAppProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ShowStatusRequest)
-    private static final smartclassroom.MobileAppProto.ShowStatusRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.MobileAppProto.ShowStatusRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.MobileAppProto.ShowStatusRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.MobileAppProto.ShowStatusRequest();
     }
 
-    public static smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstance() {
+    public static com.smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ShowStatusRequest>
         PARSER = new com.google.protobuf.AbstractParser<ShowStatusRequest>() {
-      @Override
+      @java.lang.Override
       public ShowStatusRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -410,13 +410,13 @@ public final class MobileAppProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ShowStatusRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ShowStatusRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -429,12 +429,12 @@ public final class MobileAppProto {
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> 
+    java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> 
         getDevicesStatusList();
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index);
+    com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index);
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
@@ -442,12 +442,12 @@ public final class MobileAppProto {
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    java.util.List<? extends smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
+    java.util.List<? extends com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
         getDevicesStatusOrBuilderList();
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
+    com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
         int index);
   }
   /**
@@ -470,29 +470,29 @@ public final class MobileAppProto {
       devicesStatus_ = java.util.Collections.emptyList();
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ShowStatusResponse();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_fieldAccessorTable
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.MobileAppProto.ShowStatusResponse.class, smartclassroom.MobileAppProto.ShowStatusResponse.Builder.class);
+              com.smartclassroom.MobileAppProto.ShowStatusResponse.class, com.smartclassroom.MobileAppProto.ShowStatusResponse.Builder.class);
     }
 
     public interface DeviceStatusOrBuilder extends
@@ -503,7 +503,7 @@ public final class MobileAppProto {
        * <code>string name = 1;</code>
        * @return The name.
        */
-      String getName();
+      java.lang.String getName();
       /**
        * <code>string name = 1;</code>
        * @return The bytes for name.
@@ -533,46 +533,46 @@ public final class MobileAppProto {
         name_ = "";
       }
 
-      @Override
+      @java.lang.Override
       @SuppressWarnings({"unused"})
-      protected Object newInstance(
+      protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
         return new DeviceStatus();
       }
 
-      @Override
+      @java.lang.Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_fieldAccessorTable
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.class, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder.class);
+                com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.class, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder.class);
       }
 
       public static final int NAME_FIELD_NUMBER = 1;
-      private volatile Object name_;
+      private volatile java.lang.Object name_;
       /**
        * <code>string name = 1;</code>
        * @return The name.
        */
-      @Override
-      public String getName() {
-        Object ref = name_;
-        if (ref instanceof String) {
-          return (String) ref;
+      @java.lang.Override
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         }
@@ -581,14 +581,14 @@ public final class MobileAppProto {
        * <code>string name = 1;</code>
        * @return The bytes for name.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
-        if (ref instanceof String) {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -602,13 +602,13 @@ public final class MobileAppProto {
        * <code>bool is_on = 2;</code>
        * @return The isOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getIsOn() {
         return isOn_;
       }
 
       private byte memoizedIsInitialized = -1;
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized == 1) return true;
@@ -618,7 +618,7 @@ public final class MobileAppProto {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -630,7 +630,7 @@ public final class MobileAppProto {
         getUnknownFields().writeTo(output);
       }
 
-      @Override
+      @java.lang.Override
       public int getSerializedSize() {
         int size = memoizedSize;
         if (size != -1) return size;
@@ -648,15 +648,15 @@ public final class MobileAppProto {
         return size;
       }
 
-      @Override
-      public boolean equals(final Object obj) {
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus)) {
+        if (!(obj instanceof com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus)) {
           return super.equals(obj);
         }
-        smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus other = (smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus) obj;
+        com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus other = (com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus) obj;
 
         if (!getName()
             .equals(other.getName())) return false;
@@ -666,7 +666,7 @@ public final class MobileAppProto {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -683,69 +683,69 @@ public final class MobileAppProto {
         return hash;
       }
 
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(byte[] data)
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(java.io.InputStream input)
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseDelimitedFrom(java.io.InputStream input)
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseDelimitedFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -753,23 +753,23 @@ public final class MobileAppProto {
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
-      @Override
+      @java.lang.Override
       public Builder newBuilderForType() { return newBuilder(); }
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus prototype) {
+      public static Builder newBuilder(com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
-      @Override
+      @java.lang.Override
       public Builder toBuilder() {
         return this == DEFAULT_INSTANCE
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @Override
+      @java.lang.Override
       protected Builder newBuilderForType(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -779,31 +779,31 @@ public final class MobileAppProto {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:smartclassroom.ShowStatusResponse.DeviceStatus)
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder {
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
+          return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
         }
 
-        @Override
-        protected FieldAccessorTable
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_fieldAccessorTable
+          return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.class, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder.class);
+                  com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.class, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder.class);
         }
 
-        // Construct using smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.newBuilder()
+        // Construct using com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.newBuilder()
         private Builder() {
 
         }
 
         private Builder(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
 
         }
-        @Override
+        @java.lang.Override
         public Builder clear() {
           super.clear();
           name_ = "";
@@ -813,79 +813,79 @@ public final class MobileAppProto {
           return this;
         }
 
-        @Override
+        @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
+          return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor;
         }
 
-        @Override
-        public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstanceForType() {
-          return smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance();
+        @java.lang.Override
+        public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstanceForType() {
+          return com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance();
         }
 
-        @Override
-        public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus build() {
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus result = buildPartial();
+        @java.lang.Override
+        public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus build() {
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        @Override
-        public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus buildPartial() {
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus result = new smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus(this);
+        @java.lang.Override
+        public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus buildPartial() {
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus result = new com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus(this);
           result.name_ = name_;
           result.isOn_ = isOn_;
           onBuilt();
           return result;
         }
 
-        @Override
+        @java.lang.Override
         public Builder clone() {
           return super.clone();
         }
-        @Override
+        @java.lang.Override
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            Object value) {
+            java.lang.Object value) {
           return super.setField(field, value);
         }
-        @Override
+        @java.lang.Override
         public Builder clearField(
             com.google.protobuf.Descriptors.FieldDescriptor field) {
           return super.clearField(field);
         }
-        @Override
+        @java.lang.Override
         public Builder clearOneof(
             com.google.protobuf.Descriptors.OneofDescriptor oneof) {
           return super.clearOneof(oneof);
         }
-        @Override
+        @java.lang.Override
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, Object value) {
+            int index, java.lang.Object value) {
           return super.setRepeatedField(field, index, value);
         }
-        @Override
+        @java.lang.Override
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            Object value) {
+            java.lang.Object value) {
           return super.addRepeatedField(field, value);
         }
-        @Override
+        @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus) {
-            return mergeFrom((smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus)other);
+          if (other instanceof com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus) {
+            return mergeFrom((com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus other) {
-          if (other == smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus other) {
+          if (other == com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance()) return this;
           if (!other.getName().isEmpty()) {
             name_ = other.name_;
             onChanged();
@@ -898,18 +898,18 @@ public final class MobileAppProto {
           return this;
         }
 
-        @Override
+        @java.lang.Override
         public final boolean isInitialized() {
           return true;
         }
 
-        @Override
+        @java.lang.Override
         public Builder mergeFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           if (extensionRegistry == null) {
-            throw new NullPointerException();
+            throw new java.lang.NullPointerException();
           }
           try {
             boolean done = false;
@@ -945,21 +945,21 @@ public final class MobileAppProto {
           return this;
         }
 
-        private Object name_ = "";
+        private java.lang.Object name_ = "";
         /**
          * <code>string name = 1;</code>
          * @return The name.
          */
-        public String getName() {
-          Object ref = name_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getName() {
+          java.lang.Object ref = name_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             name_ = s;
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
         /**
@@ -968,11 +968,11 @@ public final class MobileAppProto {
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
-          Object ref = name_;
+          java.lang.Object ref = name_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
+                    (java.lang.String) ref);
             name_ = b;
             return b;
           } else {
@@ -985,7 +985,7 @@ public final class MobileAppProto {
          * @return This builder for chaining.
          */
         public Builder setName(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -1026,7 +1026,7 @@ public final class MobileAppProto {
          * <code>bool is_on = 2;</code>
          * @return The isOn.
          */
-        @Override
+        @java.lang.Override
         public boolean getIsOn() {
           return isOn_;
         }
@@ -1051,13 +1051,13 @@ public final class MobileAppProto {
           onChanged();
           return this;
         }
-        @Override
+        @java.lang.Override
         public final Builder setUnknownFields(
             final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.setUnknownFields(unknownFields);
         }
 
-        @Override
+        @java.lang.Override
         public final Builder mergeUnknownFields(
             final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.mergeUnknownFields(unknownFields);
@@ -1068,18 +1068,18 @@ public final class MobileAppProto {
       }
 
       // @@protoc_insertion_point(class_scope:smartclassroom.ShowStatusResponse.DeviceStatus)
-      private static final smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus DEFAULT_INSTANCE;
+      private static final com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus();
+        DEFAULT_INSTANCE = new com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus();
       }
 
-      public static smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstance() {
+      public static com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
       private static final com.google.protobuf.Parser<DeviceStatus>
           PARSER = new com.google.protobuf.AbstractParser<DeviceStatus>() {
-        @Override
+        @java.lang.Override
         public DeviceStatus parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1103,60 +1103,60 @@ public final class MobileAppProto {
         return PARSER;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Parser<DeviceStatus> getParserForType() {
         return PARSER;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstanceForType() {
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public static final int DEVICES_STATUS_FIELD_NUMBER = 1;
-    private java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> devicesStatus_;
+    private java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> devicesStatus_;
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    @Override
-    public java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> getDevicesStatusList() {
+    @java.lang.Override
+    public java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> getDevicesStatusList() {
       return devicesStatus_;
     }
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    @Override
-    public java.util.List<? extends smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
+    @java.lang.Override
+    public java.util.List<? extends com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
         getDevicesStatusOrBuilderList() {
       return devicesStatus_;
     }
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    @Override
+    @java.lang.Override
     public int getDevicesStatusCount() {
       return devicesStatus_.size();
     }
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    @Override
-    public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index) {
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index) {
       return devicesStatus_.get(index);
     }
     /**
      * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
      */
-    @Override
-    public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
         int index) {
       return devicesStatus_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1166,7 +1166,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < devicesStatus_.size(); i++) {
@@ -1175,7 +1175,7 @@ public final class MobileAppProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1190,15 +1190,15 @@ public final class MobileAppProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.MobileAppProto.ShowStatusResponse)) {
+      if (!(obj instanceof com.smartclassroom.MobileAppProto.ShowStatusResponse)) {
         return super.equals(obj);
       }
-      smartclassroom.MobileAppProto.ShowStatusResponse other = (smartclassroom.MobileAppProto.ShowStatusResponse) obj;
+      com.smartclassroom.MobileAppProto.ShowStatusResponse other = (com.smartclassroom.MobileAppProto.ShowStatusResponse) obj;
 
       if (!getDevicesStatusList()
           .equals(other.getDevicesStatusList())) return false;
@@ -1206,7 +1206,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1222,69 +1222,69 @@ public final class MobileAppProto {
       return hash;
     }
 
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(byte[] data)
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseDelimitedFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1292,23 +1292,23 @@ public final class MobileAppProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.MobileAppProto.ShowStatusResponse prototype) {
+    public static Builder newBuilder(com.smartclassroom.MobileAppProto.ShowStatusResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1322,31 +1322,31 @@ public final class MobileAppProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ShowStatusResponse)
-        smartclassroom.MobileAppProto.ShowStatusResponseOrBuilder {
+        com.smartclassroom.MobileAppProto.ShowStatusResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_fieldAccessorTable
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.MobileAppProto.ShowStatusResponse.class, smartclassroom.MobileAppProto.ShowStatusResponse.Builder.class);
+                com.smartclassroom.MobileAppProto.ShowStatusResponse.class, com.smartclassroom.MobileAppProto.ShowStatusResponse.Builder.class);
       }
 
-      // Construct using smartclassroom.MobileAppProto.ShowStatusResponse.newBuilder()
+      // Construct using com.smartclassroom.MobileAppProto.ShowStatusResponse.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         if (devicesStatusBuilder_ == null) {
@@ -1359,29 +1359,29 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ShowStatusResponse_descriptor;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstanceForType() {
-        return smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstanceForType() {
+        return com.smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusResponse build() {
-        smartclassroom.MobileAppProto.ShowStatusResponse result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse build() {
+        com.smartclassroom.MobileAppProto.ShowStatusResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ShowStatusResponse buildPartial() {
-        smartclassroom.MobileAppProto.ShowStatusResponse result = new smartclassroom.MobileAppProto.ShowStatusResponse(this);
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse buildPartial() {
+        com.smartclassroom.MobileAppProto.ShowStatusResponse result = new com.smartclassroom.MobileAppProto.ShowStatusResponse(this);
         int from_bitField0_ = bitField0_;
         if (devicesStatusBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -1396,50 +1396,50 @@ public final class MobileAppProto {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.MobileAppProto.ShowStatusResponse) {
-          return mergeFrom((smartclassroom.MobileAppProto.ShowStatusResponse)other);
+        if (other instanceof com.smartclassroom.MobileAppProto.ShowStatusResponse) {
+          return mergeFrom((com.smartclassroom.MobileAppProto.ShowStatusResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.MobileAppProto.ShowStatusResponse other) {
-        if (other == smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.MobileAppProto.ShowStatusResponse other) {
+        if (other == com.smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance()) return this;
         if (devicesStatusBuilder_ == null) {
           if (!other.devicesStatus_.isEmpty()) {
             if (devicesStatus_.isEmpty()) {
@@ -1471,18 +1471,18 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1493,9 +1493,9 @@ public final class MobileAppProto {
                 done = true;
                 break;
               case 10: {
-                smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus m =
+                com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus m =
                     input.readMessage(
-                        smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.parser(),
+                        com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.parser(),
                         extensionRegistry);
                 if (devicesStatusBuilder_ == null) {
                   ensureDevicesStatusIsMutable();
@@ -1522,22 +1522,22 @@ public final class MobileAppProto {
       }
       private int bitField0_;
 
-      private java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> devicesStatus_ =
+      private java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> devicesStatus_ =
         java.util.Collections.emptyList();
       private void ensureDevicesStatusIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          devicesStatus_ = new java.util.ArrayList<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus>(devicesStatus_);
+          devicesStatus_ = new java.util.ArrayList<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus>(devicesStatus_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> devicesStatusBuilder_;
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> devicesStatusBuilder_;
 
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> getDevicesStatusList() {
+      public java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> getDevicesStatusList() {
         if (devicesStatusBuilder_ == null) {
           return java.util.Collections.unmodifiableList(devicesStatus_);
         } else {
@@ -1557,7 +1557,7 @@ public final class MobileAppProto {
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index) {
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus getDevicesStatus(int index) {
         if (devicesStatusBuilder_ == null) {
           return devicesStatus_.get(index);
         } else {
@@ -1568,7 +1568,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder setDevicesStatus(
-          int index, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
+          int index, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
         if (devicesStatusBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1585,7 +1585,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder setDevicesStatus(
-          int index, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
+          int index, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
         if (devicesStatusBuilder_ == null) {
           ensureDevicesStatusIsMutable();
           devicesStatus_.set(index, builderForValue.build());
@@ -1598,7 +1598,7 @@ public final class MobileAppProto {
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public Builder addDevicesStatus(smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
+      public Builder addDevicesStatus(com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
         if (devicesStatusBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1615,7 +1615,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder addDevicesStatus(
-          int index, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
+          int index, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus value) {
         if (devicesStatusBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1632,7 +1632,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder addDevicesStatus(
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
         if (devicesStatusBuilder_ == null) {
           ensureDevicesStatusIsMutable();
           devicesStatus_.add(builderForValue.build());
@@ -1646,7 +1646,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder addDevicesStatus(
-          int index, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
+          int index, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder builderForValue) {
         if (devicesStatusBuilder_ == null) {
           ensureDevicesStatusIsMutable();
           devicesStatus_.add(index, builderForValue.build());
@@ -1660,7 +1660,7 @@ public final class MobileAppProto {
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
       public Builder addAllDevicesStatus(
-          Iterable<? extends smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> values) {
+          java.lang.Iterable<? extends com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus> values) {
         if (devicesStatusBuilder_ == null) {
           ensureDevicesStatusIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1700,14 +1700,14 @@ public final class MobileAppProto {
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder getDevicesStatusBuilder(
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder getDevicesStatusBuilder(
           int index) {
         return getDevicesStatusFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder getDevicesStatusOrBuilder(
           int index) {
         if (devicesStatusBuilder_ == null) {
           return devicesStatus_.get(index);  } else {
@@ -1717,7 +1717,7 @@ public final class MobileAppProto {
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public java.util.List<? extends smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
+      public java.util.List<? extends com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
            getDevicesStatusOrBuilderList() {
         if (devicesStatusBuilder_ != null) {
           return devicesStatusBuilder_.getMessageOrBuilderList();
@@ -1728,31 +1728,31 @@ public final class MobileAppProto {
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder addDevicesStatusBuilder() {
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder addDevicesStatusBuilder() {
         return getDevicesStatusFieldBuilder().addBuilder(
-            smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance());
+            com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance());
       }
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder addDevicesStatusBuilder(
+      public com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder addDevicesStatusBuilder(
           int index) {
         return getDevicesStatusFieldBuilder().addBuilder(
-            index, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance());
+            index, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.getDefaultInstance());
       }
       /**
        * <code>repeated .smartclassroom.ShowStatusResponse.DeviceStatus devices_status = 1;</code>
        */
-      public java.util.List<smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder> 
+      public java.util.List<com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder> 
            getDevicesStatusBuilderList() {
         return getDevicesStatusFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
+          com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder> 
           getDevicesStatusFieldBuilder() {
         if (devicesStatusBuilder_ == null) {
           devicesStatusBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder>(
+              com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatus.Builder, com.smartclassroom.MobileAppProto.ShowStatusResponse.DeviceStatusOrBuilder>(
                   devicesStatus_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1761,13 +1761,13 @@ public final class MobileAppProto {
         }
         return devicesStatusBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1778,18 +1778,18 @@ public final class MobileAppProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ShowStatusResponse)
-    private static final smartclassroom.MobileAppProto.ShowStatusResponse DEFAULT_INSTANCE;
+    private static final com.smartclassroom.MobileAppProto.ShowStatusResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.MobileAppProto.ShowStatusResponse();
+      DEFAULT_INSTANCE = new com.smartclassroom.MobileAppProto.ShowStatusResponse();
     }
 
-    public static smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstance() {
+    public static com.smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ShowStatusResponse>
         PARSER = new com.google.protobuf.AbstractParser<ShowStatusResponse>() {
-      @Override
+      @java.lang.Override
       public ShowStatusResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1813,13 +1813,13 @@ public final class MobileAppProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ShowStatusResponse> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ShowStatusResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1833,7 +1833,7 @@ public final class MobileAppProto {
      * <code>string device_name = 1;</code>
      * @return The deviceName.
      */
-    String getDeviceName();
+    java.lang.String getDeviceName();
     /**
      * <code>string device_name = 1;</code>
      * @return The bytes for deviceName.
@@ -1867,46 +1867,46 @@ public final class MobileAppProto {
       deviceName_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ControlDevicesRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_fieldAccessorTable
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.MobileAppProto.ControlDevicesRequest.class, smartclassroom.MobileAppProto.ControlDevicesRequest.Builder.class);
+              com.smartclassroom.MobileAppProto.ControlDevicesRequest.class, com.smartclassroom.MobileAppProto.ControlDevicesRequest.Builder.class);
     }
 
     public static final int DEVICE_NAME_FIELD_NUMBER = 1;
-    private volatile Object deviceName_;
+    private volatile java.lang.Object deviceName_;
     /**
      * <code>string device_name = 1;</code>
      * @return The deviceName.
      */
-    @Override
-    public String getDeviceName() {
-      Object ref = deviceName_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         deviceName_ = s;
         return s;
       }
@@ -1915,14 +1915,14 @@ public final class MobileAppProto {
      * <code>string device_name = 1;</code>
      * @return The bytes for deviceName.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDeviceNameBytes() {
-      Object ref = deviceName_;
-      if (ref instanceof String) {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         deviceName_ = b;
         return b;
       } else {
@@ -1936,13 +1936,13 @@ public final class MobileAppProto {
      * <code>bool turn_on = 2;</code>
      * @return The turnOn.
      */
-    @Override
+    @java.lang.Override
     public boolean getTurnOn() {
       return turnOn_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1952,7 +1952,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceName_)) {
@@ -1964,7 +1964,7 @@ public final class MobileAppProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1982,15 +1982,15 @@ public final class MobileAppProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.MobileAppProto.ControlDevicesRequest)) {
+      if (!(obj instanceof com.smartclassroom.MobileAppProto.ControlDevicesRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.MobileAppProto.ControlDevicesRequest other = (smartclassroom.MobileAppProto.ControlDevicesRequest) obj;
+      com.smartclassroom.MobileAppProto.ControlDevicesRequest other = (com.smartclassroom.MobileAppProto.ControlDevicesRequest) obj;
 
       if (!getDeviceName()
           .equals(other.getDeviceName())) return false;
@@ -2000,7 +2000,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2017,69 +2017,69 @@ public final class MobileAppProto {
       return hash;
     }
 
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(byte[] data)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseDelimitedFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2087,23 +2087,23 @@ public final class MobileAppProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.MobileAppProto.ControlDevicesRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.MobileAppProto.ControlDevicesRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2117,31 +2117,31 @@ public final class MobileAppProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ControlDevicesRequest)
-        smartclassroom.MobileAppProto.ControlDevicesRequestOrBuilder {
+        com.smartclassroom.MobileAppProto.ControlDevicesRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_fieldAccessorTable
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.MobileAppProto.ControlDevicesRequest.class, smartclassroom.MobileAppProto.ControlDevicesRequest.Builder.class);
+                com.smartclassroom.MobileAppProto.ControlDevicesRequest.class, com.smartclassroom.MobileAppProto.ControlDevicesRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.MobileAppProto.ControlDevicesRequest.newBuilder()
+      // Construct using com.smartclassroom.MobileAppProto.ControlDevicesRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         deviceName_ = "";
@@ -2151,79 +2151,79 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstanceForType() {
-        return smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstanceForType() {
+        return com.smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesRequest build() {
-        smartclassroom.MobileAppProto.ControlDevicesRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesRequest build() {
+        com.smartclassroom.MobileAppProto.ControlDevicesRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesRequest buildPartial() {
-        smartclassroom.MobileAppProto.ControlDevicesRequest result = new smartclassroom.MobileAppProto.ControlDevicesRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesRequest buildPartial() {
+        com.smartclassroom.MobileAppProto.ControlDevicesRequest result = new com.smartclassroom.MobileAppProto.ControlDevicesRequest(this);
         result.deviceName_ = deviceName_;
         result.turnOn_ = turnOn_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.MobileAppProto.ControlDevicesRequest) {
-          return mergeFrom((smartclassroom.MobileAppProto.ControlDevicesRequest)other);
+        if (other instanceof com.smartclassroom.MobileAppProto.ControlDevicesRequest) {
+          return mergeFrom((com.smartclassroom.MobileAppProto.ControlDevicesRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.MobileAppProto.ControlDevicesRequest other) {
-        if (other == smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.MobileAppProto.ControlDevicesRequest other) {
+        if (other == com.smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance()) return this;
         if (!other.getDeviceName().isEmpty()) {
           deviceName_ = other.deviceName_;
           onChanged();
@@ -2236,18 +2236,18 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -2283,21 +2283,21 @@ public final class MobileAppProto {
         return this;
       }
 
-      private Object deviceName_ = "";
+      private java.lang.Object deviceName_ = "";
       /**
        * <code>string device_name = 1;</code>
        * @return The deviceName.
        */
-      public String getDeviceName() {
-        Object ref = deviceName_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           deviceName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2306,11 +2306,11 @@ public final class MobileAppProto {
        */
       public com.google.protobuf.ByteString
           getDeviceNameBytes() {
-        Object ref = deviceName_;
+        java.lang.Object ref = deviceName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           deviceName_ = b;
           return b;
         } else {
@@ -2323,7 +2323,7 @@ public final class MobileAppProto {
        * @return This builder for chaining.
        */
       public Builder setDeviceName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2364,7 +2364,7 @@ public final class MobileAppProto {
        * <code>bool turn_on = 2;</code>
        * @return The turnOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getTurnOn() {
         return turnOn_;
       }
@@ -2389,13 +2389,13 @@ public final class MobileAppProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2406,18 +2406,18 @@ public final class MobileAppProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ControlDevicesRequest)
-    private static final smartclassroom.MobileAppProto.ControlDevicesRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.MobileAppProto.ControlDevicesRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.MobileAppProto.ControlDevicesRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.MobileAppProto.ControlDevicesRequest();
     }
 
-    public static smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstance() {
+    public static com.smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ControlDevicesRequest>
         PARSER = new com.google.protobuf.AbstractParser<ControlDevicesRequest>() {
-      @Override
+      @java.lang.Override
       public ControlDevicesRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2441,13 +2441,13 @@ public final class MobileAppProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ControlDevicesRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ControlDevicesRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2482,29 +2482,29 @@ public final class MobileAppProto {
     private ControlDevicesResponse() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ControlDevicesResponse();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_fieldAccessorTable
+      return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.MobileAppProto.ControlDevicesResponse.class, smartclassroom.MobileAppProto.ControlDevicesResponse.Builder.class);
+              com.smartclassroom.MobileAppProto.ControlDevicesResponse.class, com.smartclassroom.MobileAppProto.ControlDevicesResponse.Builder.class);
     }
 
     public static final int SUCCESS_FIELD_NUMBER = 1;
@@ -2513,13 +2513,13 @@ public final class MobileAppProto {
      * <code>bool success = 1;</code>
      * @return The success.
      */
-    @Override
+    @java.lang.Override
     public boolean getSuccess() {
       return success_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2529,7 +2529,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (success_ != false) {
@@ -2538,7 +2538,7 @@ public final class MobileAppProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2553,15 +2553,15 @@ public final class MobileAppProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.MobileAppProto.ControlDevicesResponse)) {
+      if (!(obj instanceof com.smartclassroom.MobileAppProto.ControlDevicesResponse)) {
         return super.equals(obj);
       }
-      smartclassroom.MobileAppProto.ControlDevicesResponse other = (smartclassroom.MobileAppProto.ControlDevicesResponse) obj;
+      com.smartclassroom.MobileAppProto.ControlDevicesResponse other = (com.smartclassroom.MobileAppProto.ControlDevicesResponse) obj;
 
       if (getSuccess()
           != other.getSuccess()) return false;
@@ -2569,7 +2569,7 @@ public final class MobileAppProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2584,69 +2584,69 @@ public final class MobileAppProto {
       return hash;
     }
 
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(byte[] data)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseDelimitedFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2654,23 +2654,23 @@ public final class MobileAppProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.MobileAppProto.ControlDevicesResponse prototype) {
+    public static Builder newBuilder(com.smartclassroom.MobileAppProto.ControlDevicesResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2684,31 +2684,31 @@ public final class MobileAppProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ControlDevicesResponse)
-        smartclassroom.MobileAppProto.ControlDevicesResponseOrBuilder {
+        com.smartclassroom.MobileAppProto.ControlDevicesResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_fieldAccessorTable
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.MobileAppProto.ControlDevicesResponse.class, smartclassroom.MobileAppProto.ControlDevicesResponse.Builder.class);
+                com.smartclassroom.MobileAppProto.ControlDevicesResponse.class, com.smartclassroom.MobileAppProto.ControlDevicesResponse.Builder.class);
       }
 
-      // Construct using smartclassroom.MobileAppProto.ControlDevicesResponse.newBuilder()
+      // Construct using com.smartclassroom.MobileAppProto.ControlDevicesResponse.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         success_ = false;
@@ -2716,78 +2716,78 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
+        return com.smartclassroom.MobileAppProto.internal_static_smartclassroom_ControlDevicesResponse_descriptor;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstanceForType() {
-        return smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstanceForType() {
+        return com.smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesResponse build() {
-        smartclassroom.MobileAppProto.ControlDevicesResponse result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesResponse build() {
+        com.smartclassroom.MobileAppProto.ControlDevicesResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.MobileAppProto.ControlDevicesResponse buildPartial() {
-        smartclassroom.MobileAppProto.ControlDevicesResponse result = new smartclassroom.MobileAppProto.ControlDevicesResponse(this);
+      @java.lang.Override
+      public com.smartclassroom.MobileAppProto.ControlDevicesResponse buildPartial() {
+        com.smartclassroom.MobileAppProto.ControlDevicesResponse result = new com.smartclassroom.MobileAppProto.ControlDevicesResponse(this);
         result.success_ = success_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.MobileAppProto.ControlDevicesResponse) {
-          return mergeFrom((smartclassroom.MobileAppProto.ControlDevicesResponse)other);
+        if (other instanceof com.smartclassroom.MobileAppProto.ControlDevicesResponse) {
+          return mergeFrom((com.smartclassroom.MobileAppProto.ControlDevicesResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.MobileAppProto.ControlDevicesResponse other) {
-        if (other == smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.MobileAppProto.ControlDevicesResponse other) {
+        if (other == com.smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance()) return this;
         if (other.getSuccess() != false) {
           setSuccess(other.getSuccess());
         }
@@ -2796,18 +2796,18 @@ public final class MobileAppProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -2843,7 +2843,7 @@ public final class MobileAppProto {
        * <code>bool success = 1;</code>
        * @return The success.
        */
-      @Override
+      @java.lang.Override
       public boolean getSuccess() {
         return success_;
       }
@@ -2868,13 +2868,13 @@ public final class MobileAppProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2885,18 +2885,18 @@ public final class MobileAppProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ControlDevicesResponse)
-    private static final smartclassroom.MobileAppProto.ControlDevicesResponse DEFAULT_INSTANCE;
+    private static final com.smartclassroom.MobileAppProto.ControlDevicesResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.MobileAppProto.ControlDevicesResponse();
+      DEFAULT_INSTANCE = new com.smartclassroom.MobileAppProto.ControlDevicesResponse();
     }
 
-    public static smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstance() {
+    public static com.smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ControlDevicesResponse>
         PARSER = new com.google.protobuf.AbstractParser<ControlDevicesResponse>() {
-      @Override
+      @java.lang.Override
       public ControlDevicesResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2920,13 +2920,13 @@ public final class MobileAppProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ControlDevicesResponse> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.MobileAppProto.ControlDevicesResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2965,7 +2965,7 @@ public final class MobileAppProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\017mobileapp.proto\022\016smartclassroom\"\023\n\021Sho" +
       "wStatusRequest\"\212\001\n\022ShowStatusResponse\022G\n" +
       "\016devices_status\030\001 \003(\0132/.smartclassroom.S" +
@@ -2978,8 +2978,8 @@ public final class MobileAppProto {
       "atusRequest\032\".smartclassroom.ShowStatusR" +
       "esponse\"\000\022c\n\016ControlDevices\022%.smartclass" +
       "room.ControlDevicesRequest\032&.smartclassr" +
-      "oom.ControlDevicesResponse\"\000(\001B\020B\016Mobile" +
-      "AppProtob\006proto3"
+      "oom.ControlDevicesResponse\"\000(\001B&\n\022com.sm" +
+      "artclassroomB\016MobileAppProtoP\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2990,31 +2990,31 @@ public final class MobileAppProto {
     internal_static_smartclassroom_ShowStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ShowStatusRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_smartclassroom_ShowStatusResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_smartclassroom_ShowStatusResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ShowStatusResponse_descriptor,
-        new String[] { "DevicesStatus", });
+        new java.lang.String[] { "DevicesStatus", });
     internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor =
       internal_static_smartclassroom_ShowStatusResponse_descriptor.getNestedTypes().get(0);
     internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ShowStatusResponse_DeviceStatus_descriptor,
-        new String[] { "Name", "IsOn", });
+        new java.lang.String[] { "Name", "IsOn", });
     internal_static_smartclassroom_ControlDevicesRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_smartclassroom_ControlDevicesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ControlDevicesRequest_descriptor,
-        new String[] { "DeviceName", "TurnOn", });
+        new java.lang.String[] { "DeviceName", "TurnOn", });
     internal_static_smartclassroom_ControlDevicesResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_smartclassroom_ControlDevicesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ControlDevicesResponse_descriptor,
-        new String[] { "Success", });
+        new java.lang.String[] { "Success", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

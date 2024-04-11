@@ -18,29 +18,29 @@ public final class MobileAppServiceGrpc {
   public static final String SERVICE_NAME = "smartclassroom.MobileAppService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ShowStatusRequest,
-      smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ShowStatusRequest,
+      com.smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ShowStatus",
-      requestType = smartclassroom.MobileAppProto.ShowStatusRequest.class,
-      responseType = smartclassroom.MobileAppProto.ShowStatusResponse.class,
+      requestType = com.smartclassroom.MobileAppProto.ShowStatusRequest.class,
+      responseType = com.smartclassroom.MobileAppProto.ShowStatusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ShowStatusRequest,
-      smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod() {
-    io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ShowStatusRequest, smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod;
+  public static io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ShowStatusRequest,
+      com.smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod() {
+    io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ShowStatusRequest, com.smartclassroom.MobileAppProto.ShowStatusResponse> getShowStatusMethod;
     if ((getShowStatusMethod = MobileAppServiceGrpc.getShowStatusMethod) == null) {
       synchronized (MobileAppServiceGrpc.class) {
         if ((getShowStatusMethod = MobileAppServiceGrpc.getShowStatusMethod) == null) {
           MobileAppServiceGrpc.getShowStatusMethod = getShowStatusMethod =
-              io.grpc.MethodDescriptor.<smartclassroom.MobileAppProto.ShowStatusRequest, smartclassroom.MobileAppProto.ShowStatusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.smartclassroom.MobileAppProto.ShowStatusRequest, com.smartclassroom.MobileAppProto.ShowStatusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ShowStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance()))
+                  com.smartclassroom.MobileAppProto.ShowStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance()))
+                  com.smartclassroom.MobileAppProto.ShowStatusResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MobileAppServiceMethodDescriptorSupplier("ShowStatus"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class MobileAppServiceGrpc {
     return getShowStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ControlDevicesRequest,
-      smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod;
+  private static volatile io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ControlDevicesRequest,
+      com.smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ControlDevices",
-      requestType = smartclassroom.MobileAppProto.ControlDevicesRequest.class,
-      responseType = smartclassroom.MobileAppProto.ControlDevicesResponse.class,
+      requestType = com.smartclassroom.MobileAppProto.ControlDevicesRequest.class,
+      responseType = com.smartclassroom.MobileAppProto.ControlDevicesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ControlDevicesRequest,
-      smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod() {
-    io.grpc.MethodDescriptor<smartclassroom.MobileAppProto.ControlDevicesRequest, smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod;
+  public static io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ControlDevicesRequest,
+      com.smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod() {
+    io.grpc.MethodDescriptor<com.smartclassroom.MobileAppProto.ControlDevicesRequest, com.smartclassroom.MobileAppProto.ControlDevicesResponse> getControlDevicesMethod;
     if ((getControlDevicesMethod = MobileAppServiceGrpc.getControlDevicesMethod) == null) {
       synchronized (MobileAppServiceGrpc.class) {
         if ((getControlDevicesMethod = MobileAppServiceGrpc.getControlDevicesMethod) == null) {
           MobileAppServiceGrpc.getControlDevicesMethod = getControlDevicesMethod =
-              io.grpc.MethodDescriptor.<smartclassroom.MobileAppProto.ControlDevicesRequest, smartclassroom.MobileAppProto.ControlDevicesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.smartclassroom.MobileAppProto.ControlDevicesRequest, com.smartclassroom.MobileAppProto.ControlDevicesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ControlDevices"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance()))
+                  com.smartclassroom.MobileAppProto.ControlDevicesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance()))
+                  com.smartclassroom.MobileAppProto.ControlDevicesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MobileAppServiceMethodDescriptorSupplier("ControlDevices"))
               .build();
         }
@@ -86,7 +86,7 @@ public final class MobileAppServiceGrpc {
   public static MobileAppServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceStub>() {
-        @Override
+        @java.lang.Override
         public MobileAppServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MobileAppServiceStub(channel, callOptions);
         }
@@ -101,7 +101,7 @@ public final class MobileAppServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public MobileAppServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MobileAppServiceBlockingStub(channel, callOptions);
         }
@@ -116,7 +116,7 @@ public final class MobileAppServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MobileAppServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public MobileAppServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MobileAppServiceFutureStub(channel, callOptions);
         }
@@ -136,8 +136,8 @@ public final class MobileAppServiceGrpc {
      * 显示灯和投影仪的状态
      * </pre>
      */
-    public void showStatus(smartclassroom.MobileAppProto.ShowStatusRequest request,
-        io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ShowStatusResponse> responseObserver) {
+    public void showStatus(com.smartclassroom.MobileAppProto.ShowStatusRequest request,
+        io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ShowStatusResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getShowStatusMethod(), responseObserver);
     }
 
@@ -146,26 +146,26 @@ public final class MobileAppServiceGrpc {
      * 控制灯和投影仪
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(
-        io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ControlDevicesResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(
+        io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesResponse> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getControlDevicesMethod(), responseObserver);
     }
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getShowStatusMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                smartclassroom.MobileAppProto.ShowStatusRequest,
-                smartclassroom.MobileAppProto.ShowStatusResponse>(
+                com.smartclassroom.MobileAppProto.ShowStatusRequest,
+                com.smartclassroom.MobileAppProto.ShowStatusResponse>(
                   this, METHODID_SHOW_STATUS)))
           .addMethod(
             getControlDevicesMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                smartclassroom.MobileAppProto.ControlDevicesRequest,
-                smartclassroom.MobileAppProto.ControlDevicesResponse>(
+                com.smartclassroom.MobileAppProto.ControlDevicesRequest,
+                com.smartclassroom.MobileAppProto.ControlDevicesResponse>(
                   this, METHODID_CONTROL_DEVICES)))
           .build();
     }
@@ -182,7 +182,7 @@ public final class MobileAppServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MobileAppServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MobileAppServiceStub(channel, callOptions);
@@ -193,8 +193,8 @@ public final class MobileAppServiceGrpc {
      * 显示灯和投影仪的状态
      * </pre>
      */
-    public void showStatus(smartclassroom.MobileAppProto.ShowStatusRequest request,
-        io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ShowStatusResponse> responseObserver) {
+    public void showStatus(com.smartclassroom.MobileAppProto.ShowStatusRequest request,
+        io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ShowStatusResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getShowStatusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -204,8 +204,8 @@ public final class MobileAppServiceGrpc {
      * 控制灯和投影仪
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(
-        io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ControlDevicesResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(
+        io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesResponse> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getControlDevicesMethod(), getCallOptions()), responseObserver);
     }
@@ -222,7 +222,7 @@ public final class MobileAppServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MobileAppServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MobileAppServiceBlockingStub(channel, callOptions);
@@ -233,7 +233,7 @@ public final class MobileAppServiceGrpc {
      * 显示灯和投影仪的状态
      * </pre>
      */
-    public smartclassroom.MobileAppProto.ShowStatusResponse showStatus(smartclassroom.MobileAppProto.ShowStatusRequest request) {
+    public com.smartclassroom.MobileAppProto.ShowStatusResponse showStatus(com.smartclassroom.MobileAppProto.ShowStatusRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getShowStatusMethod(), getCallOptions(), request);
     }
@@ -250,7 +250,7 @@ public final class MobileAppServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MobileAppServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MobileAppServiceFutureStub(channel, callOptions);
@@ -261,8 +261,8 @@ public final class MobileAppServiceGrpc {
      * 显示灯和投影仪的状态
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<smartclassroom.MobileAppProto.ShowStatusResponse> showStatus(
-        smartclassroom.MobileAppProto.ShowStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.smartclassroom.MobileAppProto.ShowStatusResponse> showStatus(
+        com.smartclassroom.MobileAppProto.ShowStatusRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getShowStatusMethod(), getCallOptions()), request);
     }
@@ -284,27 +284,27 @@ public final class MobileAppServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SHOW_STATUS:
-          serviceImpl.showStatus((smartclassroom.MobileAppProto.ShowStatusRequest) request,
-              (io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ShowStatusResponse>) responseObserver);
+          serviceImpl.showStatus((com.smartclassroom.MobileAppProto.ShowStatusRequest) request,
+              (io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ShowStatusResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CONTROL_DEVICES:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.controlDevices(
-              (io.grpc.stub.StreamObserver<smartclassroom.MobileAppProto.ControlDevicesResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -315,12 +315,12 @@ public final class MobileAppServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     MobileAppServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return smartclassroom.MobileAppProto.getDescriptor();
+      return com.smartclassroom.MobileAppProto.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("MobileAppService");
     }
@@ -340,7 +340,7 @@ public final class MobileAppServiceGrpc {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

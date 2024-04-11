@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option java_multiple_files = false;
+option java_package = "com.smartclassroom";
 option java_outer_classname = "MobileAppProto";
 
 package smartclassroom;

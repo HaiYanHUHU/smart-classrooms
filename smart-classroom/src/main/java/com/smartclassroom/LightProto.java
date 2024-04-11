@@ -37,33 +37,33 @@ public final class LightProto {
     private GetLightStatusRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new GetLightStatusRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_fieldAccessorTable
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.LightProto.GetLightStatusRequest.class, smartclassroom.LightProto.GetLightStatusRequest.Builder.class);
+              com.smartclassroom.LightProto.GetLightStatusRequest.class, com.smartclassroom.LightProto.GetLightStatusRequest.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -73,13 +73,13 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -90,21 +90,21 @@ public final class LightProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.LightProto.GetLightStatusRequest)) {
+      if (!(obj instanceof com.smartclassroom.LightProto.GetLightStatusRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.LightProto.GetLightStatusRequest other = (smartclassroom.LightProto.GetLightStatusRequest) obj;
+      com.smartclassroom.LightProto.GetLightStatusRequest other = (com.smartclassroom.LightProto.GetLightStatusRequest) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -116,69 +116,69 @@ public final class LightProto {
       return hash;
     }
 
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(byte[] data)
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseDelimitedFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.GetLightStatusRequest parseFrom(
+    public static com.smartclassroom.LightProto.GetLightStatusRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -186,23 +186,23 @@ public final class LightProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.LightProto.GetLightStatusRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.LightProto.GetLightStatusRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -216,124 +216,124 @@ public final class LightProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.GetLightStatusRequest)
-        smartclassroom.LightProto.GetLightStatusRequestOrBuilder {
+        com.smartclassroom.LightProto.GetLightStatusRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_fieldAccessorTable
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.LightProto.GetLightStatusRequest.class, smartclassroom.LightProto.GetLightStatusRequest.Builder.class);
+                com.smartclassroom.LightProto.GetLightStatusRequest.class, com.smartclassroom.LightProto.GetLightStatusRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.LightProto.GetLightStatusRequest.newBuilder()
+      // Construct using com.smartclassroom.LightProto.GetLightStatusRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_GetLightStatusRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.LightProto.GetLightStatusRequest getDefaultInstanceForType() {
-        return smartclassroom.LightProto.GetLightStatusRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.GetLightStatusRequest getDefaultInstanceForType() {
+        return com.smartclassroom.LightProto.GetLightStatusRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.LightProto.GetLightStatusRequest build() {
-        smartclassroom.LightProto.GetLightStatusRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.GetLightStatusRequest build() {
+        com.smartclassroom.LightProto.GetLightStatusRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.LightProto.GetLightStatusRequest buildPartial() {
-        smartclassroom.LightProto.GetLightStatusRequest result = new smartclassroom.LightProto.GetLightStatusRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.LightProto.GetLightStatusRequest buildPartial() {
+        com.smartclassroom.LightProto.GetLightStatusRequest result = new com.smartclassroom.LightProto.GetLightStatusRequest(this);
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.LightProto.GetLightStatusRequest) {
-          return mergeFrom((smartclassroom.LightProto.GetLightStatusRequest)other);
+        if (other instanceof com.smartclassroom.LightProto.GetLightStatusRequest) {
+          return mergeFrom((com.smartclassroom.LightProto.GetLightStatusRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.LightProto.GetLightStatusRequest other) {
-        if (other == smartclassroom.LightProto.GetLightStatusRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.LightProto.GetLightStatusRequest other) {
+        if (other == com.smartclassroom.LightProto.GetLightStatusRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -358,13 +358,13 @@ public final class LightProto {
         } // finally
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -375,18 +375,18 @@ public final class LightProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.GetLightStatusRequest)
-    private static final smartclassroom.LightProto.GetLightStatusRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.LightProto.GetLightStatusRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.LightProto.GetLightStatusRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.LightProto.GetLightStatusRequest();
     }
 
-    public static smartclassroom.LightProto.GetLightStatusRequest getDefaultInstance() {
+    public static com.smartclassroom.LightProto.GetLightStatusRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetLightStatusRequest>
         PARSER = new com.google.protobuf.AbstractParser<GetLightStatusRequest>() {
-      @Override
+      @java.lang.Override
       public GetLightStatusRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -410,13 +410,13 @@ public final class LightProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<GetLightStatusRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.LightProto.GetLightStatusRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.LightProto.GetLightStatusRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -430,7 +430,7 @@ public final class LightProto {
      * <code>string name = 1;</code>
      * @return The name.
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>string name = 1;</code>
      * @return The bytes for name.
@@ -464,46 +464,46 @@ public final class LightProto {
       name_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new LightStatus();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_fieldAccessorTable
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.LightProto.LightStatus.class, smartclassroom.LightProto.LightStatus.Builder.class);
+              com.smartclassroom.LightProto.LightStatus.class, com.smartclassroom.LightProto.LightStatus.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     /**
      * <code>string name = 1;</code>
      * @return The name.
      */
-    @Override
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -512,14 +512,14 @@ public final class LightProto {
      * <code>string name = 1;</code>
      * @return The bytes for name.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -533,13 +533,13 @@ public final class LightProto {
      * <code>bool is_on = 2;</code>
      * @return The isOn.
      */
-    @Override
+    @java.lang.Override
     public boolean getIsOn() {
       return isOn_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -549,7 +549,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -561,7 +561,7 @@ public final class LightProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -579,15 +579,15 @@ public final class LightProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.LightProto.LightStatus)) {
+      if (!(obj instanceof com.smartclassroom.LightProto.LightStatus)) {
         return super.equals(obj);
       }
-      smartclassroom.LightProto.LightStatus other = (smartclassroom.LightProto.LightStatus) obj;
+      com.smartclassroom.LightProto.LightStatus other = (com.smartclassroom.LightProto.LightStatus) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -597,7 +597,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -614,69 +614,69 @@ public final class LightProto {
       return hash;
     }
 
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(byte[] data)
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightStatus parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.LightStatus parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightStatus parseDelimitedFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightStatus parseFrom(
+    public static com.smartclassroom.LightProto.LightStatus parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -684,23 +684,23 @@ public final class LightProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.LightProto.LightStatus prototype) {
+    public static Builder newBuilder(com.smartclassroom.LightProto.LightStatus prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -714,31 +714,31 @@ public final class LightProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.LightStatus)
-        smartclassroom.LightProto.LightStatusOrBuilder {
+        com.smartclassroom.LightProto.LightStatusOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_fieldAccessorTable
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.LightProto.LightStatus.class, smartclassroom.LightProto.LightStatus.Builder.class);
+                com.smartclassroom.LightProto.LightStatus.class, com.smartclassroom.LightProto.LightStatus.Builder.class);
       }
 
-      // Construct using smartclassroom.LightProto.LightStatus.newBuilder()
+      // Construct using com.smartclassroom.LightProto.LightStatus.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         name_ = "";
@@ -748,79 +748,79 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightStatus_descriptor;
       }
 
-      @Override
-      public smartclassroom.LightProto.LightStatus getDefaultInstanceForType() {
-        return smartclassroom.LightProto.LightStatus.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightStatus getDefaultInstanceForType() {
+        return com.smartclassroom.LightProto.LightStatus.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.LightProto.LightStatus build() {
-        smartclassroom.LightProto.LightStatus result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightStatus build() {
+        com.smartclassroom.LightProto.LightStatus result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.LightProto.LightStatus buildPartial() {
-        smartclassroom.LightProto.LightStatus result = new smartclassroom.LightProto.LightStatus(this);
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightStatus buildPartial() {
+        com.smartclassroom.LightProto.LightStatus result = new com.smartclassroom.LightProto.LightStatus(this);
         result.name_ = name_;
         result.isOn_ = isOn_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.LightProto.LightStatus) {
-          return mergeFrom((smartclassroom.LightProto.LightStatus)other);
+        if (other instanceof com.smartclassroom.LightProto.LightStatus) {
+          return mergeFrom((com.smartclassroom.LightProto.LightStatus)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.LightProto.LightStatus other) {
-        if (other == smartclassroom.LightProto.LightStatus.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.LightProto.LightStatus other) {
+        if (other == com.smartclassroom.LightProto.LightStatus.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
@@ -833,18 +833,18 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -880,21 +880,21 @@ public final class LightProto {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>string name = 1;</code>
        * @return The name.
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -903,11 +903,11 @@ public final class LightProto {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -920,7 +920,7 @@ public final class LightProto {
        * @return This builder for chaining.
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -961,7 +961,7 @@ public final class LightProto {
        * <code>bool is_on = 2;</code>
        * @return The isOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getIsOn() {
         return isOn_;
       }
@@ -986,13 +986,13 @@ public final class LightProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1003,18 +1003,18 @@ public final class LightProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.LightStatus)
-    private static final smartclassroom.LightProto.LightStatus DEFAULT_INSTANCE;
+    private static final com.smartclassroom.LightProto.LightStatus DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.LightProto.LightStatus();
+      DEFAULT_INSTANCE = new com.smartclassroom.LightProto.LightStatus();
     }
 
-    public static smartclassroom.LightProto.LightStatus getDefaultInstance() {
+    public static com.smartclassroom.LightProto.LightStatus getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<LightStatus>
         PARSER = new com.google.protobuf.AbstractParser<LightStatus>() {
-      @Override
+      @java.lang.Override
       public LightStatus parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1038,13 +1038,13 @@ public final class LightProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LightStatus> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.LightProto.LightStatus getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.LightProto.LightStatus getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1079,29 +1079,29 @@ public final class LightProto {
     private ControlLightRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ControlLightRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_fieldAccessorTable
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.LightProto.ControlLightRequest.class, smartclassroom.LightProto.ControlLightRequest.Builder.class);
+              com.smartclassroom.LightProto.ControlLightRequest.class, com.smartclassroom.LightProto.ControlLightRequest.Builder.class);
     }
 
     public static final int TURN_ON_FIELD_NUMBER = 1;
@@ -1110,13 +1110,13 @@ public final class LightProto {
      * <code>bool turn_on = 1;</code>
      * @return The turnOn.
      */
-    @Override
+    @java.lang.Override
     public boolean getTurnOn() {
       return turnOn_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1126,7 +1126,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (turnOn_ != false) {
@@ -1135,7 +1135,7 @@ public final class LightProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1150,15 +1150,15 @@ public final class LightProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.LightProto.ControlLightRequest)) {
+      if (!(obj instanceof com.smartclassroom.LightProto.ControlLightRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.LightProto.ControlLightRequest other = (smartclassroom.LightProto.ControlLightRequest) obj;
+      com.smartclassroom.LightProto.ControlLightRequest other = (com.smartclassroom.LightProto.ControlLightRequest) obj;
 
       if (getTurnOn()
           != other.getTurnOn()) return false;
@@ -1166,7 +1166,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1181,69 +1181,69 @@ public final class LightProto {
       return hash;
     }
 
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(byte[] data)
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.ControlLightRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseDelimitedFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.ControlLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.ControlLightRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1251,23 +1251,23 @@ public final class LightProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.LightProto.ControlLightRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.LightProto.ControlLightRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1281,31 +1281,31 @@ public final class LightProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.ControlLightRequest)
-        smartclassroom.LightProto.ControlLightRequestOrBuilder {
+        com.smartclassroom.LightProto.ControlLightRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_fieldAccessorTable
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.LightProto.ControlLightRequest.class, smartclassroom.LightProto.ControlLightRequest.Builder.class);
+                com.smartclassroom.LightProto.ControlLightRequest.class, com.smartclassroom.LightProto.ControlLightRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.LightProto.ControlLightRequest.newBuilder()
+      // Construct using com.smartclassroom.LightProto.ControlLightRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         turnOn_ = false;
@@ -1313,78 +1313,78 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_ControlLightRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.LightProto.ControlLightRequest getDefaultInstanceForType() {
-        return smartclassroom.LightProto.ControlLightRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.ControlLightRequest getDefaultInstanceForType() {
+        return com.smartclassroom.LightProto.ControlLightRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.LightProto.ControlLightRequest build() {
-        smartclassroom.LightProto.ControlLightRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.ControlLightRequest build() {
+        com.smartclassroom.LightProto.ControlLightRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.LightProto.ControlLightRequest buildPartial() {
-        smartclassroom.LightProto.ControlLightRequest result = new smartclassroom.LightProto.ControlLightRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.LightProto.ControlLightRequest buildPartial() {
+        com.smartclassroom.LightProto.ControlLightRequest result = new com.smartclassroom.LightProto.ControlLightRequest(this);
         result.turnOn_ = turnOn_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.LightProto.ControlLightRequest) {
-          return mergeFrom((smartclassroom.LightProto.ControlLightRequest)other);
+        if (other instanceof com.smartclassroom.LightProto.ControlLightRequest) {
+          return mergeFrom((com.smartclassroom.LightProto.ControlLightRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.LightProto.ControlLightRequest other) {
-        if (other == smartclassroom.LightProto.ControlLightRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.LightProto.ControlLightRequest other) {
+        if (other == com.smartclassroom.LightProto.ControlLightRequest.getDefaultInstance()) return this;
         if (other.getTurnOn() != false) {
           setTurnOn(other.getTurnOn());
         }
@@ -1393,18 +1393,18 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1440,7 +1440,7 @@ public final class LightProto {
        * <code>bool turn_on = 1;</code>
        * @return The turnOn.
        */
-      @Override
+      @java.lang.Override
       public boolean getTurnOn() {
         return turnOn_;
       }
@@ -1465,13 +1465,13 @@ public final class LightProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1482,18 +1482,18 @@ public final class LightProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.ControlLightRequest)
-    private static final smartclassroom.LightProto.ControlLightRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.LightProto.ControlLightRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.LightProto.ControlLightRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.LightProto.ControlLightRequest();
     }
 
-    public static smartclassroom.LightProto.ControlLightRequest getDefaultInstance() {
+    public static com.smartclassroom.LightProto.ControlLightRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ControlLightRequest>
         PARSER = new com.google.protobuf.AbstractParser<ControlLightRequest>() {
-      @Override
+      @java.lang.Override
       public ControlLightRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1517,13 +1517,13 @@ public final class LightProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ControlLightRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.LightProto.ControlLightRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.LightProto.ControlLightRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1558,29 +1558,29 @@ public final class LightProto {
     private LightControlResponse() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new LightControlResponse();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_fieldAccessorTable
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.LightProto.LightControlResponse.class, smartclassroom.LightProto.LightControlResponse.Builder.class);
+              com.smartclassroom.LightProto.LightControlResponse.class, com.smartclassroom.LightProto.LightControlResponse.Builder.class);
     }
 
     public static final int SUCCESS_FIELD_NUMBER = 1;
@@ -1589,13 +1589,13 @@ public final class LightProto {
      * <code>bool success = 1;</code>
      * @return The success.
      */
-    @Override
+    @java.lang.Override
     public boolean getSuccess() {
       return success_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1605,7 +1605,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (success_ != false) {
@@ -1614,7 +1614,7 @@ public final class LightProto {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1629,15 +1629,15 @@ public final class LightProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.LightProto.LightControlResponse)) {
+      if (!(obj instanceof com.smartclassroom.LightProto.LightControlResponse)) {
         return super.equals(obj);
       }
-      smartclassroom.LightProto.LightControlResponse other = (smartclassroom.LightProto.LightControlResponse) obj;
+      com.smartclassroom.LightProto.LightControlResponse other = (com.smartclassroom.LightProto.LightControlResponse) obj;
 
       if (getSuccess()
           != other.getSuccess()) return false;
@@ -1645,7 +1645,7 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1660,69 +1660,69 @@ public final class LightProto {
       return hash;
     }
 
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(byte[] data)
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.LightControlResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseDelimitedFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.LightControlResponse parseFrom(
+    public static com.smartclassroom.LightProto.LightControlResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1730,23 +1730,23 @@ public final class LightProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.LightProto.LightControlResponse prototype) {
+    public static Builder newBuilder(com.smartclassroom.LightProto.LightControlResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1760,31 +1760,31 @@ public final class LightProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.LightControlResponse)
-        smartclassroom.LightProto.LightControlResponseOrBuilder {
+        com.smartclassroom.LightProto.LightControlResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_fieldAccessorTable
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.LightProto.LightControlResponse.class, smartclassroom.LightProto.LightControlResponse.Builder.class);
+                com.smartclassroom.LightProto.LightControlResponse.class, com.smartclassroom.LightProto.LightControlResponse.Builder.class);
       }
 
-      // Construct using smartclassroom.LightProto.LightControlResponse.newBuilder()
+      // Construct using com.smartclassroom.LightProto.LightControlResponse.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         success_ = false;
@@ -1792,78 +1792,78 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_LightControlResponse_descriptor;
       }
 
-      @Override
-      public smartclassroom.LightProto.LightControlResponse getDefaultInstanceForType() {
-        return smartclassroom.LightProto.LightControlResponse.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightControlResponse getDefaultInstanceForType() {
+        return com.smartclassroom.LightProto.LightControlResponse.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.LightProto.LightControlResponse build() {
-        smartclassroom.LightProto.LightControlResponse result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightControlResponse build() {
+        com.smartclassroom.LightProto.LightControlResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.LightProto.LightControlResponse buildPartial() {
-        smartclassroom.LightProto.LightControlResponse result = new smartclassroom.LightProto.LightControlResponse(this);
+      @java.lang.Override
+      public com.smartclassroom.LightProto.LightControlResponse buildPartial() {
+        com.smartclassroom.LightProto.LightControlResponse result = new com.smartclassroom.LightProto.LightControlResponse(this);
         result.success_ = success_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.LightProto.LightControlResponse) {
-          return mergeFrom((smartclassroom.LightProto.LightControlResponse)other);
+        if (other instanceof com.smartclassroom.LightProto.LightControlResponse) {
+          return mergeFrom((com.smartclassroom.LightProto.LightControlResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.LightProto.LightControlResponse other) {
-        if (other == smartclassroom.LightProto.LightControlResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.LightProto.LightControlResponse other) {
+        if (other == com.smartclassroom.LightProto.LightControlResponse.getDefaultInstance()) return this;
         if (other.getSuccess() != false) {
           setSuccess(other.getSuccess());
         }
@@ -1872,18 +1872,18 @@ public final class LightProto {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1919,7 +1919,7 @@ public final class LightProto {
        * <code>bool success = 1;</code>
        * @return The success.
        */
-      @Override
+      @java.lang.Override
       public boolean getSuccess() {
         return success_;
       }
@@ -1944,13 +1944,13 @@ public final class LightProto {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1961,18 +1961,18 @@ public final class LightProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.LightControlResponse)
-    private static final smartclassroom.LightProto.LightControlResponse DEFAULT_INSTANCE;
+    private static final com.smartclassroom.LightProto.LightControlResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.LightProto.LightControlResponse();
+      DEFAULT_INSTANCE = new com.smartclassroom.LightProto.LightControlResponse();
     }
 
-    public static smartclassroom.LightProto.LightControlResponse getDefaultInstance() {
+    public static com.smartclassroom.LightProto.LightControlResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<LightControlResponse>
         PARSER = new com.google.protobuf.AbstractParser<LightControlResponse>() {
-      @Override
+      @java.lang.Override
       public LightControlResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1996,13 +1996,13 @@ public final class LightProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LightControlResponse> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.LightProto.LightControlResponse getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.LightProto.LightControlResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2031,33 +2031,33 @@ public final class LightProto {
     private MonitorLightRequest() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new MonitorLightRequest();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_fieldAccessorTable
+      return com.smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              smartclassroom.LightProto.MonitorLightRequest.class, smartclassroom.LightProto.MonitorLightRequest.Builder.class);
+              com.smartclassroom.LightProto.MonitorLightRequest.class, com.smartclassroom.LightProto.MonitorLightRequest.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2067,13 +2067,13 @@ public final class LightProto {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2084,21 +2084,21 @@ public final class LightProto {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof smartclassroom.LightProto.MonitorLightRequest)) {
+      if (!(obj instanceof com.smartclassroom.LightProto.MonitorLightRequest)) {
         return super.equals(obj);
       }
-      smartclassroom.LightProto.MonitorLightRequest other = (smartclassroom.LightProto.MonitorLightRequest) obj;
+      com.smartclassroom.LightProto.MonitorLightRequest other = (com.smartclassroom.LightProto.MonitorLightRequest) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2110,69 +2110,69 @@ public final class LightProto {
       return hash;
     }
 
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(byte[] data)
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseDelimitedFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static smartclassroom.LightProto.MonitorLightRequest parseFrom(
+    public static com.smartclassroom.LightProto.MonitorLightRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2180,23 +2180,23 @@ public final class LightProto {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(smartclassroom.LightProto.MonitorLightRequest prototype) {
+    public static Builder newBuilder(com.smartclassroom.LightProto.MonitorLightRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2210,124 +2210,124 @@ public final class LightProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:smartclassroom.MonitorLightRequest)
-        smartclassroom.LightProto.MonitorLightRequestOrBuilder {
+        com.smartclassroom.LightProto.MonitorLightRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_fieldAccessorTable
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                smartclassroom.LightProto.MonitorLightRequest.class, smartclassroom.LightProto.MonitorLightRequest.Builder.class);
+                com.smartclassroom.LightProto.MonitorLightRequest.class, com.smartclassroom.LightProto.MonitorLightRequest.Builder.class);
       }
 
-      // Construct using smartclassroom.LightProto.MonitorLightRequest.newBuilder()
+      // Construct using com.smartclassroom.LightProto.MonitorLightRequest.newBuilder()
       private Builder() {
 
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
+        return com.smartclassroom.LightProto.internal_static_smartclassroom_MonitorLightRequest_descriptor;
       }
 
-      @Override
-      public smartclassroom.LightProto.MonitorLightRequest getDefaultInstanceForType() {
-        return smartclassroom.LightProto.MonitorLightRequest.getDefaultInstance();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.MonitorLightRequest getDefaultInstanceForType() {
+        return com.smartclassroom.LightProto.MonitorLightRequest.getDefaultInstance();
       }
 
-      @Override
-      public smartclassroom.LightProto.MonitorLightRequest build() {
-        smartclassroom.LightProto.MonitorLightRequest result = buildPartial();
+      @java.lang.Override
+      public com.smartclassroom.LightProto.MonitorLightRequest build() {
+        com.smartclassroom.LightProto.MonitorLightRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public smartclassroom.LightProto.MonitorLightRequest buildPartial() {
-        smartclassroom.LightProto.MonitorLightRequest result = new smartclassroom.LightProto.MonitorLightRequest(this);
+      @java.lang.Override
+      public com.smartclassroom.LightProto.MonitorLightRequest buildPartial() {
+        com.smartclassroom.LightProto.MonitorLightRequest result = new com.smartclassroom.LightProto.MonitorLightRequest(this);
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartclassroom.LightProto.MonitorLightRequest) {
-          return mergeFrom((smartclassroom.LightProto.MonitorLightRequest)other);
+        if (other instanceof com.smartclassroom.LightProto.MonitorLightRequest) {
+          return mergeFrom((com.smartclassroom.LightProto.MonitorLightRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(smartclassroom.LightProto.MonitorLightRequest other) {
-        if (other == smartclassroom.LightProto.MonitorLightRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.smartclassroom.LightProto.MonitorLightRequest other) {
+        if (other == com.smartclassroom.LightProto.MonitorLightRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -2352,13 +2352,13 @@ public final class LightProto {
         } // finally
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2369,18 +2369,18 @@ public final class LightProto {
     }
 
     // @@protoc_insertion_point(class_scope:smartclassroom.MonitorLightRequest)
-    private static final smartclassroom.LightProto.MonitorLightRequest DEFAULT_INSTANCE;
+    private static final com.smartclassroom.LightProto.MonitorLightRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new smartclassroom.LightProto.MonitorLightRequest();
+      DEFAULT_INSTANCE = new com.smartclassroom.LightProto.MonitorLightRequest();
     }
 
-    public static smartclassroom.LightProto.MonitorLightRequest getDefaultInstance() {
+    public static com.smartclassroom.LightProto.MonitorLightRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<MonitorLightRequest>
         PARSER = new com.google.protobuf.AbstractParser<MonitorLightRequest>() {
-      @Override
+      @java.lang.Override
       public MonitorLightRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2404,13 +2404,13 @@ public final class LightProto {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MonitorLightRequest> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public smartclassroom.LightProto.MonitorLightRequest getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.smartclassroom.LightProto.MonitorLightRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2449,7 +2449,7 @@ public final class LightProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\013light.proto\022\016smartclassroom\"\027\n\025GetLigh" +
       "tStatusRequest\"*\n\013LightStatus\022\014\n\004name\030\001 " +
       "\001(\t\022\r\n\005is_on\030\002 \001(\010\"&\n\023ControlLightReques" +
@@ -2462,7 +2462,8 @@ public final class LightProto {
       "\032$.smartclassroom.LightControlResponse\"\000" +
       "\022\\\n\022MonitorLightStream\022#.smartclassroom." +
       "MonitorLightRequest\032\033.smartclassroom.Lig" +
-      "htStatus\"\000(\0010\001B\014B\nLightProtob\006proto3"
+      "htStatus\"\000(\0010\001B\"\n\022com.smartclassroomB\nLi" +
+      "ghtProtoP\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2473,31 +2474,31 @@ public final class LightProto {
     internal_static_smartclassroom_GetLightStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_GetLightStatusRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_smartclassroom_LightStatus_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_smartclassroom_LightStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_LightStatus_descriptor,
-        new String[] { "Name", "IsOn", });
+        new java.lang.String[] { "Name", "IsOn", });
     internal_static_smartclassroom_ControlLightRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_smartclassroom_ControlLightRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_ControlLightRequest_descriptor,
-        new String[] { "TurnOn", });
+        new java.lang.String[] { "TurnOn", });
     internal_static_smartclassroom_LightControlResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_smartclassroom_LightControlResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_LightControlResponse_descriptor,
-        new String[] { "Success", });
+        new java.lang.String[] { "Success", });
     internal_static_smartclassroom_MonitorLightRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_smartclassroom_MonitorLightRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_smartclassroom_MonitorLightRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
