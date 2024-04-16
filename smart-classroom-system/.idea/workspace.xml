@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a650d559-31e2-414f-895a-5a4668c32bf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/LightServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/MobileAppServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/ProjectorServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/LightClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/LightClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/MobileAppClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/MobileAppClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/ProjectorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/ProjectorClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/LightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/LightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/MobileAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/MobileAppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/ProjectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/server/ProjectorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smart-classroom/src/main/java/com/smartclassroom/client/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
