@@ -1,13 +1,12 @@
 package com.smartclassroom.server;
 
-
 import com.smartclassroom.MobileAppServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import com.smartclassroom.MobileAppProto.*;
 
 public class MobileAppService extends MobileAppServiceGrpc.MobileAppServiceImplBase {
 
-    @Override
+
     public void showStatus(ShowStatusRequest req, StreamObserver<ShowStatusResponse> responseObserver) {
         // 构造假设的设备状态响应
         ShowStatusResponse response = ShowStatusResponse.newBuilder()
@@ -24,7 +23,7 @@ public class MobileAppService extends MobileAppServiceGrpc.MobileAppServiceImplB
         responseObserver.onCompleted();
     }
 
-    @Override
+
     public StreamObserver<ControlDevicesRequest> controlDevices(final StreamObserver<ControlDevicesResponse> responseObserver) {
         return new StreamObserver<ControlDevicesRequest>() {
             @Override
