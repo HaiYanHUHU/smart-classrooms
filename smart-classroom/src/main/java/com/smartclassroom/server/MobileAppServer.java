@@ -2,20 +2,41 @@ package com.smartclassroom.server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-
+import com.orbitz.consul.Consul;
+import com.orbitz.consul.model.agent.Registration;
+import com.orbitz.consul.AgentClient;
+import com.orbitz.consul.model.agent.ImmutableRegCheck;
+import com.orbitz.consul.model.agent.ImmutableRegistration;
 
 public class MobileAppServer {
     public static void main(String[] args) throws Exception {
-        int port = 50053; // 确保这个端口不与其他服务冲突
+        int port = 10003;
         Server server = ServerBuilder.forPort(port)
-                .addService(new MobileAppService())  // 使用服务实现类的实例
+                .addService(new MobileAppService())
                 .build()
                 .start();
 
-        System.out.println("Server started, listening on " + port);
+        Consul consul = Consul.builder().build();
+        AgentClient agentClient = consul.agentClient();
+
+        Registration.RegCheck check = ImmutableRegCheck.builder()
+                .tcp("localhost:" + port)
+                .interval("10s")
+                .timeout("5s")
+                .build();
+
+        Registration registration = ImmutableRegistration.builder()
+                .id("mobileapp-server")
+                .name("mobileapp-service")
+                .port(port)
+                .check(check)
+                .build();
+
+        agentClient.register(registration);
+        System.out.println("Server started listening on " + port);
+
         server.awaitTermination();
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> agentClient.deregister("mobileapp-server")));
     }
 }
-
-
-

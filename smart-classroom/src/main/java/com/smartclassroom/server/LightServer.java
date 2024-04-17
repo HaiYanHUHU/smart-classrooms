@@ -4,40 +4,42 @@ import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import com.orbitz.consul.Consul;
 import com.orbitz.consul.model.agent.ImmutableRegCheck;
+import com.orbitz.consul.AgentClient;
+import com.orbitz.consul.model.agent.Registration;
 import com.orbitz.consul.model.agent.ImmutableRegistration;
 
 public class LightServer {
-    private static void registerServiceWithConsul() {
-        Consul consul = Consul.builder().build(); // 默认连接到localhost:8500
-        ImmutableRegistration registration = ImmutableRegistration.builder()
-                .id("light-server")
-                .name("Light Service")
-                .port(50051)
-                .addTags("light", "classroom")
-                .check(ImmutableRegCheck.builder()
-                        .ttl("15s") // 定时健康检查时间间隔
-                        .build())
-                .build();
-        consul.agentClient().register(registration);
-        consul.agentClient().pass("light-server"); // 假设服务启动即健康
-    }
-
-    private static void deregisterServiceWithConsul() {
-        Consul consul = Consul.builder().build();
-        consul.agentClient().deregister("light-server");
-    }
-
     public static void main(String[] args) throws Exception {
-        int port = 50051;
-        registerServiceWithConsul();
+        int port = 10001;
         Server server = ServerBuilder.forPort(port)
                 .addService(new LightService())
                 .build()
                 .start();
-        System.out.println("Server started, listening on " + port);
 
-        Runtime.getRuntime().addShutdownHook(new Thread(LightServer::deregisterServiceWithConsul));
+        // 创建Consul客户端
+        Consul consul = Consul.builder().build();
+        AgentClient agentClient = consul.agentClient();
+
+        // 设置健康检查
+        Registration.RegCheck check = ImmutableRegCheck.builder()
+                .tcp("localhost:" + port)
+                .interval("10s")
+                .timeout("5s")
+                .build();
+
+        // 注册服务到Consul
+        Registration registration = ImmutableRegistration.builder()
+                .id("light-server")
+                .name("light-service")
+                .port(port)
+                .check(check)
+                .build();
+
+        agentClient.register(registration);
+        System.out.println("Server started listening on " + port);
 
         server.awaitTermination();
+        //
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> agentClient.deregister("light-server")));
     }
 }
