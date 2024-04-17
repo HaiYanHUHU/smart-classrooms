@@ -10,7 +10,7 @@ import com.orbitz.consul.model.agent.ImmutableRegistration;
 
 public class ProjectorServer {
     public static void main(String[] args) throws Exception {
-        int port = 10002;
+        int port = 20242;
         Server server = ServerBuilder.forPort(port)
                 .addService(new ProjectorService())
                 .build()
@@ -21,7 +21,7 @@ public class ProjectorServer {
 
         Registration.RegCheck check = ImmutableRegCheck.builder()
                 .tcp("localhost:" + port)
-                .interval("10s")
+                .interval("20s")
                 .timeout("5s")
                 .build();
 

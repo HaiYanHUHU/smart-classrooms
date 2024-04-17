@@ -10,7 +10,7 @@ import com.orbitz.consul.model.agent.ImmutableRegistration;
 
 public class MobileAppServer {
     public static void main(String[] args) throws Exception {
-        int port = 10003;
+        int port = 20243;
         Server server = ServerBuilder.forPort(port)
                 .addService(new MobileAppService())
                 .build()
@@ -21,7 +21,7 @@ public class MobileAppServer {
 
         Registration.RegCheck check = ImmutableRegCheck.builder()
                 .tcp("localhost:" + port)
-                .interval("10s")
+                .interval("20s")
                 .timeout("5s")
                 .build();
 

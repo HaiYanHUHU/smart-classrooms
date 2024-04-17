@@ -10,7 +10,7 @@ import com.orbitz.consul.model.agent.ImmutableRegistration;
 
 public class LightServer {
     public static void main(String[] args) throws Exception {
-        int port = 10001;
+        int port = 20241;
         Server server = ServerBuilder.forPort(port)
                 .addService(new LightService())
                 .build()
@@ -23,7 +23,7 @@ public class LightServer {
         // 设置健康检查
         Registration.RegCheck check = ImmutableRegCheck.builder()
                 .tcp("localhost:" + port)
-                .interval("10s")
+                .interval("20s")
                 .timeout("5s")
                 .build();
 
