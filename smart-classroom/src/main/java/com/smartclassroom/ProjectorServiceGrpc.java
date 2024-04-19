@@ -164,7 +164,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 获取投影仪的状态
+     * 获取投影仪的状态 一元grp
      * </pre>
      */
     public void getProjectorStatus(com.smartclassroom.ProjectorProto.GetProjectorStatusRequest request,
@@ -184,7 +184,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 实时监控投影仪的状态
+     * 实时监控投影仪的状态 双向流
      * </pre>
      */
     public io.grpc.stub.StreamObserver<com.smartclassroom.ProjectorProto.MonitorProjectorRequest> monitorProjectorStream(
@@ -238,7 +238,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 获取投影仪的状态
+     * 获取投影仪的状态 一元grp
      * </pre>
      */
     public void getProjectorStatus(com.smartclassroom.ProjectorProto.GetProjectorStatusRequest request,
@@ -260,7 +260,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 实时监控投影仪的状态
+     * 实时监控投影仪的状态 双向流
      * </pre>
      */
     public io.grpc.stub.StreamObserver<com.smartclassroom.ProjectorProto.MonitorProjectorRequest> monitorProjectorStream(
@@ -289,7 +289,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 获取投影仪的状态
+     * 获取投影仪的状态 一元grp
      * </pre>
      */
     public com.smartclassroom.ProjectorProto.ProjectorStatus getProjectorStatus(com.smartclassroom.ProjectorProto.GetProjectorStatusRequest request) {
@@ -327,7 +327,7 @@ public final class ProjectorServiceGrpc {
 
     /**
      * <pre>
-     * 获取投影仪的状态
+     * 获取投影仪的状态 一元grp
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<com.smartclassroom.ProjectorProto.ProjectorStatus> getProjectorStatus(

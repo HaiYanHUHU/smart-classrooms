@@ -7,12 +7,12 @@ package smartclassroom;
 
 // 定义灯的服务接口
 service LightService {
-    // 获取灯的状态
+    // 获取灯的状态 一元grp
     rpc GetLightStatus (GetLightStatusRequest) returns (LightStatus) {}
     // 控制灯的开关
     rpc ControlLight (ControlLightRequest) returns (LightControlResponse) {}
-    // 实时监控灯的状态
-    rpc MonitorLightStream (stream MonitorLightRequest) returns (stream LightStatus) {}
+    // 实时监控灯的状态 服务流
+    rpc MonitorLightStream (MonitorLightRequest) returns (stream LightStatus) {}
 }
 
 // 获取灯状态请求消息

@@ -10,7 +10,7 @@ package smartclassroom;
 service MobileAppService {
     // 显示灯和投影仪的状态
     rpc ShowStatus (ShowStatusRequest) returns (ShowStatusResponse) {}
-    // 控制灯和投影仪
+    // 控制灯和投影仪 这是一个客户端流
     rpc ControlDevices (stream ControlDevicesRequest) returns (ControlDevicesResponse) {}
 }
 

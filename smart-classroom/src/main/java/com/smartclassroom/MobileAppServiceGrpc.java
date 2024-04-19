@@ -143,7 +143,7 @@ public final class MobileAppServiceGrpc {
 
     /**
      * <pre>
-     * 控制灯和投影仪
+     * 控制灯和投影仪 这是一个客户端流
      * </pre>
      */
     public io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(
@@ -201,7 +201,7 @@ public final class MobileAppServiceGrpc {
 
     /**
      * <pre>
-     * 控制灯和投影仪
+     * 控制灯和投影仪 这是一个客户端流
      * </pre>
      */
     public io.grpc.stub.StreamObserver<com.smartclassroom.MobileAppProto.ControlDevicesRequest> controlDevices(

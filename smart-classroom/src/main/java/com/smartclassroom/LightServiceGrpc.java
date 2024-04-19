@@ -87,7 +87,7 @@ public final class LightServiceGrpc {
       fullMethodName = SERVICE_NAME + '/' + "MonitorLightStream",
       requestType = com.smartclassroom.LightProto.MonitorLightRequest.class,
       responseType = com.smartclassroom.LightProto.LightStatus.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
   public static io.grpc.MethodDescriptor<com.smartclassroom.LightProto.MonitorLightRequest,
       com.smartclassroom.LightProto.LightStatus> getMonitorLightStreamMethod() {
     io.grpc.MethodDescriptor<com.smartclassroom.LightProto.MonitorLightRequest, com.smartclassroom.LightProto.LightStatus> getMonitorLightStreamMethod;
@@ -96,7 +96,7 @@ public final class LightServiceGrpc {
         if ((getMonitorLightStreamMethod = LightServiceGrpc.getMonitorLightStreamMethod) == null) {
           LightServiceGrpc.getMonitorLightStreamMethod = getMonitorLightStreamMethod =
               io.grpc.MethodDescriptor.<com.smartclassroom.LightProto.MonitorLightRequest, com.smartclassroom.LightProto.LightStatus>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MonitorLightStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
@@ -164,7 +164,7 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态
+     * 获取灯的状态 一元grp
      * </pre>
      */
     public void getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request,
@@ -184,12 +184,12 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 实时监控灯的状态
+     * 实时监控灯的状态 服务流
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.MonitorLightRequest> monitorLightStream(
+    public void monitorLightStream(com.smartclassroom.LightProto.MonitorLightRequest request,
         io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
-      return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getMonitorLightStreamMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMonitorLightStreamMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
@@ -210,7 +210,7 @@ public final class LightServiceGrpc {
                   this, METHODID_CONTROL_LIGHT)))
           .addMethod(
             getMonitorLightStreamMethod(),
-            io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
+            io.grpc.stub.ServerCalls.asyncServerStreamingCall(
               new MethodHandlers<
                 com.smartclassroom.LightProto.MonitorLightRequest,
                 com.smartclassroom.LightProto.LightStatus>(
@@ -238,7 +238,7 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态
+     * 获取灯的状态 一元grp
      * </pre>
      */
     public void getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request,
@@ -260,13 +260,13 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 实时监控灯的状态
+     * 实时监控灯的状态 服务流
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.MonitorLightRequest> monitorLightStream(
+    public void monitorLightStream(com.smartclassroom.LightProto.MonitorLightRequest request,
         io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
-      return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
-          getChannel().newCall(getMonitorLightStreamMethod(), getCallOptions()), responseObserver);
+      io.grpc.stub.ClientCalls.asyncServerStreamingCall(
+          getChannel().newCall(getMonitorLightStreamMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -289,7 +289,7 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态
+     * 获取灯的状态 一元grp
      * </pre>
      */
     public com.smartclassroom.LightProto.LightStatus getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request) {
@@ -305,6 +305,17 @@ public final class LightServiceGrpc {
     public com.smartclassroom.LightProto.LightControlResponse controlLight(com.smartclassroom.LightProto.ControlLightRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getControlLightMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * 实时监控灯的状态 服务流
+     * </pre>
+     */
+    public java.util.Iterator<com.smartclassroom.LightProto.LightStatus> monitorLightStream(
+        com.smartclassroom.LightProto.MonitorLightRequest request) {
+      return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
+          getChannel(), getMonitorLightStreamMethod(), getCallOptions(), request);
     }
   }
 
@@ -327,7 +338,7 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态
+     * 获取灯的状态 一元grp
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<com.smartclassroom.LightProto.LightStatus> getLightStatus(
@@ -377,6 +388,10 @@ public final class LightServiceGrpc {
           serviceImpl.controlLight((com.smartclassroom.LightProto.ControlLightRequest) request,
               (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightControlResponse>) responseObserver);
           break;
+        case METHODID_MONITOR_LIGHT_STREAM:
+          serviceImpl.monitorLightStream((com.smartclassroom.LightProto.MonitorLightRequest) request,
+              (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -387,9 +402,6 @@ public final class LightServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_MONITOR_LIGHT_STREAM:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.monitorLightStream(
-              (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus>) responseObserver);
         default:
           throw new AssertionError();
       }

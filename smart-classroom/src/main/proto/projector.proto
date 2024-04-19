@@ -8,11 +8,11 @@ package smartclassroom;
 
 // 定义投影仪的服务接口
 service ProjectorService {
-    // 获取投影仪的状态
+    // 获取投影仪的状态 一元grp
     rpc GetProjectorStatus (GetProjectorStatusRequest) returns (ProjectorStatus) {}
     // 控制投影仪的开关
     rpc ControlProjector (ControlProjectorRequest) returns (ProjectorControlResponse) {}
-    // 实时监控投影仪的状态
+    // 实时监控投影仪的状态 双向流
     rpc MonitorProjectorStream (stream MonitorProjectorRequest) returns (stream ProjectorStatus) {}
 }
 

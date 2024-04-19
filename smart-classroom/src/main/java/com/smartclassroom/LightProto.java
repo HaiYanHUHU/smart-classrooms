@@ -2455,15 +2455,15 @@ public final class LightProto {
       "\001(\t\022\r\n\005is_on\030\002 \001(\010\"&\n\023ControlLightReques" +
       "t\022\017\n\007turn_on\030\001 \001(\010\"\'\n\024LightControlRespon" +
       "se\022\017\n\007success\030\001 \001(\010\"\025\n\023MonitorLightReque" +
-      "st2\241\002\n\014LightService\022V\n\016GetLightStatus\022%." +
+      "st2\237\002\n\014LightService\022V\n\016GetLightStatus\022%." +
       "smartclassroom.GetLightStatusRequest\032\033.s" +
       "martclassroom.LightStatus\"\000\022[\n\014ControlLi" +
       "ght\022#.smartclassroom.ControlLightRequest" +
       "\032$.smartclassroom.LightControlResponse\"\000" +
-      "\022\\\n\022MonitorLightStream\022#.smartclassroom." +
+      "\022Z\n\022MonitorLightStream\022#.smartclassroom." +
       "MonitorLightRequest\032\033.smartclassroom.Lig" +
-      "htStatus\"\000(\0010\001B\"\n\022com.smartclassroomB\nLi" +
-      "ghtProtoP\000b\006proto3"
+      "htStatus\"\0000\001B\"\n\022com.smartclassroomB\nLigh" +
+      "tProtoP\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
