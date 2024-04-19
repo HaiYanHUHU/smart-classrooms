@@ -3,36 +3,32 @@ syntax = "proto3";
 option java_multiple_files = false;
 option java_package = "com.smartclassroom";
 option java_outer_classname = "LightProto";
-package smartclassroom;
 
-// 定义灯的服务接口
+
+// 灯光服务接口定义
 service LightService {
-    // 获取灯的状态 一元grp
+    // 一元 RPC：获取灯的状态
     rpc GetLightStatus (GetLightStatusRequest) returns (LightStatus) {}
-    // 控制灯的开关
-    rpc ControlLight (ControlLightRequest) returns (LightControlResponse) {}
-    // 实时监控灯的状态 服务流
-    rpc MonitorLightStream (MonitorLightRequest) returns (stream LightStatus) {}
+
+    // 客户端流式 RPC：批量控制灯光
+    rpc ControlLights (stream ControlLightRequest) returns (LightControlResponse) {}
+
 }
 
-// 获取灯状态请求消息
+// 获取灯光状态的请求消息
 message GetLightStatusRequest {}
 
-// 灯状态响应消息
+// 灯光状态消息
 message LightStatus {
-    string name = 1;
-    bool is_on = 2;
+    string name = 1; // 灯光名称
+    bool is_on = 2;  // 灯光是否开启
 }
-
-// 控制灯请求消息
+// 控制灯光的请求消息
 message ControlLightRequest {
-    bool turn_on = 1;
+    bool turn_on = 1; // 控制指令：true 开灯，false 关灯
 }
-
-// 控制灯响应消息
+// 控制灯光的响应消息
 message LightControlResponse {
-    bool success = 1;
+    bool success = 1; // 控制操作是否成功
 }
 
-// 实时监控灯状态请求消息
-message MonitorLightRequest {}

@@ -4,7 +4,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
  * <pre>
- * 定义灯的服务接口
+ * 灯光服务接口定义
  * </pre>
  */
 @javax.annotation.Generated(
@@ -15,32 +15,32 @@ public final class LightServiceGrpc {
 
   private LightServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "smartclassroom.LightService";
+  public static final String SERVICE_NAME = "LightService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.smartclassroom.LightProto.GetLightStatusRequest,
-      com.smartclassroom.LightProto.LightStatus> getGetLightStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<LightProto.GetLightStatusRequest,
+      LightProto.LightStatus> getGetLightStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetLightStatus",
-      requestType = com.smartclassroom.LightProto.GetLightStatusRequest.class,
-      responseType = com.smartclassroom.LightProto.LightStatus.class,
+      requestType = LightProto.GetLightStatusRequest.class,
+      responseType = LightProto.LightStatus.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smartclassroom.LightProto.GetLightStatusRequest,
-      com.smartclassroom.LightProto.LightStatus> getGetLightStatusMethod() {
-    io.grpc.MethodDescriptor<com.smartclassroom.LightProto.GetLightStatusRequest, com.smartclassroom.LightProto.LightStatus> getGetLightStatusMethod;
+  public static io.grpc.MethodDescriptor<LightProto.GetLightStatusRequest,
+      LightProto.LightStatus> getGetLightStatusMethod() {
+    io.grpc.MethodDescriptor<LightProto.GetLightStatusRequest, LightProto.LightStatus> getGetLightStatusMethod;
     if ((getGetLightStatusMethod = LightServiceGrpc.getGetLightStatusMethod) == null) {
       synchronized (LightServiceGrpc.class) {
         if ((getGetLightStatusMethod = LightServiceGrpc.getGetLightStatusMethod) == null) {
           LightServiceGrpc.getGetLightStatusMethod = getGetLightStatusMethod =
-              io.grpc.MethodDescriptor.<com.smartclassroom.LightProto.GetLightStatusRequest, com.smartclassroom.LightProto.LightStatus>newBuilder()
+              io.grpc.MethodDescriptor.<LightProto.GetLightStatusRequest, LightProto.LightStatus>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetLightStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.GetLightStatusRequest.getDefaultInstance()))
+                  LightProto.GetLightStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.LightStatus.getDefaultInstance()))
+                  LightProto.LightStatus.getDefaultInstance()))
               .setSchemaDescriptor(new LightServiceMethodDescriptorSupplier("GetLightStatus"))
               .build();
         }
@@ -49,66 +49,35 @@ public final class LightServiceGrpc {
     return getGetLightStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.smartclassroom.LightProto.ControlLightRequest,
-      com.smartclassroom.LightProto.LightControlResponse> getControlLightMethod;
+  private static volatile io.grpc.MethodDescriptor<LightProto.ControlLightRequest,
+      LightProto.LightControlResponse> getControlLightsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ControlLight",
-      requestType = com.smartclassroom.LightProto.ControlLightRequest.class,
-      responseType = com.smartclassroom.LightProto.LightControlResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smartclassroom.LightProto.ControlLightRequest,
-      com.smartclassroom.LightProto.LightControlResponse> getControlLightMethod() {
-    io.grpc.MethodDescriptor<com.smartclassroom.LightProto.ControlLightRequest, com.smartclassroom.LightProto.LightControlResponse> getControlLightMethod;
-    if ((getControlLightMethod = LightServiceGrpc.getControlLightMethod) == null) {
+      fullMethodName = SERVICE_NAME + '/' + "ControlLights",
+      requestType = LightProto.ControlLightRequest.class,
+      responseType = LightProto.LightControlResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<LightProto.ControlLightRequest,
+      LightProto.LightControlResponse> getControlLightsMethod() {
+    io.grpc.MethodDescriptor<LightProto.ControlLightRequest, LightProto.LightControlResponse> getControlLightsMethod;
+    if ((getControlLightsMethod = LightServiceGrpc.getControlLightsMethod) == null) {
       synchronized (LightServiceGrpc.class) {
-        if ((getControlLightMethod = LightServiceGrpc.getControlLightMethod) == null) {
-          LightServiceGrpc.getControlLightMethod = getControlLightMethod =
-              io.grpc.MethodDescriptor.<com.smartclassroom.LightProto.ControlLightRequest, com.smartclassroom.LightProto.LightControlResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ControlLight"))
+        if ((getControlLightsMethod = LightServiceGrpc.getControlLightsMethod) == null) {
+          LightServiceGrpc.getControlLightsMethod = getControlLightsMethod =
+              io.grpc.MethodDescriptor.<LightProto.ControlLightRequest, LightProto.LightControlResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ControlLights"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.ControlLightRequest.getDefaultInstance()))
+                  LightProto.ControlLightRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.LightControlResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new LightServiceMethodDescriptorSupplier("ControlLight"))
+                  LightProto.LightControlResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new LightServiceMethodDescriptorSupplier("ControlLights"))
               .build();
         }
       }
     }
-    return getControlLightMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<com.smartclassroom.LightProto.MonitorLightRequest,
-      com.smartclassroom.LightProto.LightStatus> getMonitorLightStreamMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "MonitorLightStream",
-      requestType = com.smartclassroom.LightProto.MonitorLightRequest.class,
-      responseType = com.smartclassroom.LightProto.LightStatus.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<com.smartclassroom.LightProto.MonitorLightRequest,
-      com.smartclassroom.LightProto.LightStatus> getMonitorLightStreamMethod() {
-    io.grpc.MethodDescriptor<com.smartclassroom.LightProto.MonitorLightRequest, com.smartclassroom.LightProto.LightStatus> getMonitorLightStreamMethod;
-    if ((getMonitorLightStreamMethod = LightServiceGrpc.getMonitorLightStreamMethod) == null) {
-      synchronized (LightServiceGrpc.class) {
-        if ((getMonitorLightStreamMethod = LightServiceGrpc.getMonitorLightStreamMethod) == null) {
-          LightServiceGrpc.getMonitorLightStreamMethod = getMonitorLightStreamMethod =
-              io.grpc.MethodDescriptor.<com.smartclassroom.LightProto.MonitorLightRequest, com.smartclassroom.LightProto.LightStatus>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MonitorLightStream"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.MonitorLightRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smartclassroom.LightProto.LightStatus.getDefaultInstance()))
-              .setSchemaDescriptor(new LightServiceMethodDescriptorSupplier("MonitorLightStream"))
-              .build();
-        }
-      }
-    }
-    return getMonitorLightStreamMethod;
+    return getControlLightsMethod;
   }
 
   /**
@@ -117,7 +86,7 @@ public final class LightServiceGrpc {
   public static LightServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LightServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LightServiceStub>() {
-        @java.lang.Override
+        @Override
         public LightServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LightServiceStub(channel, callOptions);
         }
@@ -132,7 +101,7 @@ public final class LightServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LightServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LightServiceBlockingStub>() {
-        @java.lang.Override
+        @Override
         public LightServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LightServiceBlockingStub(channel, callOptions);
         }
@@ -147,7 +116,7 @@ public final class LightServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LightServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LightServiceFutureStub>() {
-        @java.lang.Override
+        @Override
         public LightServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LightServiceFutureStub(channel, callOptions);
         }
@@ -157,71 +126,54 @@ public final class LightServiceGrpc {
 
   /**
    * <pre>
-   * 定义灯的服务接口
+   * 灯光服务接口定义
    * </pre>
    */
   public static abstract class LightServiceImplBase implements io.grpc.BindableService {
 
     /**
      * <pre>
-     * 获取灯的状态 一元grp
+     * 一元 RPC：获取灯的状态
      * </pre>
      */
-    public void getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
+    public void getLightStatus(LightProto.GetLightStatusRequest request,
+                               io.grpc.stub.StreamObserver<LightProto.LightStatus> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetLightStatusMethod(), responseObserver);
     }
 
     /**
      * <pre>
-     * 控制灯的开关
+     * 客户端流式 RPC：批量控制灯光
      * </pre>
      */
-    public void controlLight(com.smartclassroom.LightProto.ControlLightRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightControlResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getControlLightMethod(), responseObserver);
+    public io.grpc.stub.StreamObserver<LightProto.ControlLightRequest> controlLights(
+        io.grpc.stub.StreamObserver<LightProto.LightControlResponse> responseObserver) {
+      return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getControlLightsMethod(), responseObserver);
     }
 
-    /**
-     * <pre>
-     * 实时监控灯的状态 服务流
-     * </pre>
-     */
-    public void monitorLightStream(com.smartclassroom.LightProto.MonitorLightRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMonitorLightStreamMethod(), responseObserver);
-    }
-
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetLightStatusMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.smartclassroom.LightProto.GetLightStatusRequest,
-                com.smartclassroom.LightProto.LightStatus>(
+                LightProto.GetLightStatusRequest,
+                LightProto.LightStatus>(
                   this, METHODID_GET_LIGHT_STATUS)))
           .addMethod(
-            getControlLightMethod(),
-            io.grpc.stub.ServerCalls.asyncUnaryCall(
+            getControlLightsMethod(),
+            io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                com.smartclassroom.LightProto.ControlLightRequest,
-                com.smartclassroom.LightProto.LightControlResponse>(
-                  this, METHODID_CONTROL_LIGHT)))
-          .addMethod(
-            getMonitorLightStreamMethod(),
-            io.grpc.stub.ServerCalls.asyncServerStreamingCall(
-              new MethodHandlers<
-                com.smartclassroom.LightProto.MonitorLightRequest,
-                com.smartclassroom.LightProto.LightStatus>(
-                  this, METHODID_MONITOR_LIGHT_STREAM)))
+                LightProto.ControlLightRequest,
+                LightProto.LightControlResponse>(
+                  this, METHODID_CONTROL_LIGHTS)))
           .build();
     }
   }
 
   /**
    * <pre>
-   * 定义灯的服务接口
+   * 灯光服务接口定义
    * </pre>
    */
   public static final class LightServiceStub extends io.grpc.stub.AbstractAsyncStub<LightServiceStub> {
@@ -230,7 +182,7 @@ public final class LightServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected LightServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LightServiceStub(channel, callOptions);
@@ -238,41 +190,30 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态 一元grp
+     * 一元 RPC：获取灯的状态
      * </pre>
      */
-    public void getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
+    public void getLightStatus(LightProto.GetLightStatusRequest request,
+                               io.grpc.stub.StreamObserver<LightProto.LightStatus> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetLightStatusMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      * <pre>
-     * 控制灯的开关
+     * 客户端流式 RPC：批量控制灯光
      * </pre>
      */
-    public void controlLight(com.smartclassroom.LightProto.ControlLightRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightControlResponse> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getControlLightMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     * <pre>
-     * 实时监控灯的状态 服务流
-     * </pre>
-     */
-    public void monitorLightStream(com.smartclassroom.LightProto.MonitorLightRequest request,
-        io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncServerStreamingCall(
-          getChannel().newCall(getMonitorLightStreamMethod(), getCallOptions()), request, responseObserver);
+    public io.grpc.stub.StreamObserver<LightProto.ControlLightRequest> controlLights(
+        io.grpc.stub.StreamObserver<LightProto.LightControlResponse> responseObserver) {
+      return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
+          getChannel().newCall(getControlLightsMethod(), getCallOptions()), responseObserver);
     }
   }
 
   /**
    * <pre>
-   * 定义灯的服务接口
+   * 灯光服务接口定义
    * </pre>
    */
   public static final class LightServiceBlockingStub extends io.grpc.stub.AbstractBlockingStub<LightServiceBlockingStub> {
@@ -281,7 +222,7 @@ public final class LightServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected LightServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LightServiceBlockingStub(channel, callOptions);
@@ -289,39 +230,18 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态 一元grp
+     * 一元 RPC：获取灯的状态
      * </pre>
      */
-    public com.smartclassroom.LightProto.LightStatus getLightStatus(com.smartclassroom.LightProto.GetLightStatusRequest request) {
+    public LightProto.LightStatus getLightStatus(LightProto.GetLightStatusRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetLightStatusMethod(), getCallOptions(), request);
-    }
-
-    /**
-     * <pre>
-     * 控制灯的开关
-     * </pre>
-     */
-    public com.smartclassroom.LightProto.LightControlResponse controlLight(com.smartclassroom.LightProto.ControlLightRequest request) {
-      return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getControlLightMethod(), getCallOptions(), request);
-    }
-
-    /**
-     * <pre>
-     * 实时监控灯的状态 服务流
-     * </pre>
-     */
-    public java.util.Iterator<com.smartclassroom.LightProto.LightStatus> monitorLightStream(
-        com.smartclassroom.LightProto.MonitorLightRequest request) {
-      return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
-          getChannel(), getMonitorLightStreamMethod(), getCallOptions(), request);
     }
   }
 
   /**
    * <pre>
-   * 定义灯的服务接口
+   * 灯光服务接口定义
    * </pre>
    */
   public static final class LightServiceFutureStub extends io.grpc.stub.AbstractFutureStub<LightServiceFutureStub> {
@@ -330,7 +250,7 @@ public final class LightServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected LightServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LightServiceFutureStub(channel, callOptions);
@@ -338,30 +258,18 @@ public final class LightServiceGrpc {
 
     /**
      * <pre>
-     * 获取灯的状态 一元grp
+     * 一元 RPC：获取灯的状态
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smartclassroom.LightProto.LightStatus> getLightStatus(
-        com.smartclassroom.LightProto.GetLightStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<LightProto.LightStatus> getLightStatus(
+        LightProto.GetLightStatusRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetLightStatusMethod(), getCallOptions()), request);
-    }
-
-    /**
-     * <pre>
-     * 控制灯的开关
-     * </pre>
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.smartclassroom.LightProto.LightControlResponse> controlLight(
-        com.smartclassroom.LightProto.ControlLightRequest request) {
-      return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getControlLightMethod(), getCallOptions()), request);
     }
   }
 
   private static final int METHODID_GET_LIGHT_STATUS = 0;
-  private static final int METHODID_CONTROL_LIGHT = 1;
-  private static final int METHODID_MONITOR_LIGHT_STREAM = 2;
+  private static final int METHODID_CONTROL_LIGHTS = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -376,32 +284,27 @@ public final class LightServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_LIGHT_STATUS:
-          serviceImpl.getLightStatus((com.smartclassroom.LightProto.GetLightStatusRequest) request,
-              (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus>) responseObserver);
-          break;
-        case METHODID_CONTROL_LIGHT:
-          serviceImpl.controlLight((com.smartclassroom.LightProto.ControlLightRequest) request,
-              (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightControlResponse>) responseObserver);
-          break;
-        case METHODID_MONITOR_LIGHT_STREAM:
-          serviceImpl.monitorLightStream((com.smartclassroom.LightProto.MonitorLightRequest) request,
-              (io.grpc.stub.StreamObserver<com.smartclassroom.LightProto.LightStatus>) responseObserver);
+          serviceImpl.getLightStatus((LightProto.GetLightStatusRequest) request,
+              (io.grpc.stub.StreamObserver<LightProto.LightStatus>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_CONTROL_LIGHTS:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.controlLights(
+              (io.grpc.stub.StreamObserver<LightProto.LightControlResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -412,12 +315,12 @@ public final class LightServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     LightServiceBaseDescriptorSupplier() {}
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.smartclassroom.LightProto.getDescriptor();
+      return LightProto.getDescriptor();
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("LightService");
     }
@@ -437,7 +340,7 @@ public final class LightServiceGrpc {
       this.methodName = methodName;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
@@ -454,8 +357,7 @@ public final class LightServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new LightServiceFileDescriptorSupplier())
               .addMethod(getGetLightStatusMethod())
-              .addMethod(getControlLightMethod())
-              .addMethod(getMonitorLightStreamMethod())
+              .addMethod(getControlLightsMethod())
               .build();
         }
       }

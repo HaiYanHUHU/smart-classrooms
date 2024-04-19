@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_multiple_files = false;
+option java_package = "com.smartclassroom";
+option java_outer_classname = "HeatingProto";
+
+
+// 暖气服务定义
+service HeatingService {
+    // 一元 RPC：获取暖气状态
+    rpc GetHeatingStatus (GetHeatingStatusRequest) returns (HeatingStatus);
+
+    // 服务端流式 RPC：持续发送暖气状态
+    rpc StreamHeatingEvents (HeatingEventsRequest) returns (stream HeatingStatus);
+
+    // 客户端流式 RPC：接收多个控制命令并返回统一响应
+    rpc ControlHeating (stream ControlHeatingRequest) returns (HeatingControlResponse);
+
+    // 双向流 RPC：暖气状态和控制命令双向传输
+    rpc MonitorHeatingStream (stream MonitorHeatingRequest) returns (stream HeatingStatus);
+}
+
+message GetHeatingStatusRequest {}
+message HeatingEventsRequest {}
+message HeatingStatus {
+    string name = 1;
+    bool is_on = 2;
+    double temperature = 3; // 暖气当前温度
+}
+message ControlHeatingRequest {
+    bool turn_on = 1;
+    double set_temperature = 2; // 设置暖气温度
+}
+message HeatingControlResponse {
+    bool success = 1;
+}
+message MonitorHeatingRequest {}
