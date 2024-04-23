@@ -78,7 +78,7 @@ public class HeatingClient {
     // 客户端主方法，用于演示客户端调用
     public static void main(String[] args) throws InterruptedException {
         // 暖气服务器地址和端口
-        HeatingClient client = new HeatingClient("localhost", 8080);
+        HeatingClient client = new HeatingClient("localhost", 50051);
         try {
             // 获取暖气状态
             client.getHeatingStatus();

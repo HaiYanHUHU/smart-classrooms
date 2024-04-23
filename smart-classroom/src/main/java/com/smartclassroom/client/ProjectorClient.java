@@ -79,7 +79,7 @@ public class ProjectorClient {
     // 客户端主方法，用于演示客户端调用
     public static void main(String[] args) throws InterruptedException {
         // 服务器地址和端口
-        ProjectorClient client = new ProjectorClient("localhost", 8080);
+        ProjectorClient client = new ProjectorClient("localhost", 9090);
         try {
             // 获取投影仪状态
             client.getProjectorStatus();
