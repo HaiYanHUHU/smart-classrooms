@@ -105,9 +105,9 @@ public class HeatingServer {
     private void registerToConsul() {
         System.out.println("Registering server to Consul...");
 
-        // Load Consul configuration from light-service.properties file
+        // Load Consul configuration from heating-service.properties file
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("src/main/resources/light-service.properties")) {
+        try (FileInputStream fis = new FileInputStream("src/main/resources/heating-service.properties")) {
             props.load(fis);
         } catch (IOException e) {
             e.printStackTrace();

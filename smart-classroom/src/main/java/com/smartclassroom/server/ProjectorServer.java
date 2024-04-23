@@ -103,9 +103,9 @@ public class ProjectorServer {
     private void registerToConsul() {
         System.out.println("Registering server to Consul...");
 
-        // Load Consul configuration from light-service.properties file
+        // Load Consul configuration from projector-service.properties file
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("src/main/resources/light-service.properties")) {
+        try (FileInputStream fis = new FileInputStream("src/main/resources/projector-service.properties")) {
             props.load(fis);
         } catch (IOException e) {
             e.printStackTrace();
