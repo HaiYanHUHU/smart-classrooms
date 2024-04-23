@@ -25,6 +25,10 @@ public class HeatingClient {
         // 异步存根，用于流式RPC调用
         this.asyncStub = HeatingServiceGrpc.newStub(channel);
     }
+    //供GUI直接调用
+    public void toggleHeating(boolean isOn, double temperature) {
+        controlHeating(isOn, temperature);
+    }
 
     // 关闭客户端channel
     public void shutdown() throws InterruptedException {

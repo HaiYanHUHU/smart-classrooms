@@ -6,8 +6,15 @@ import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import com.ecwid.consul.v1.ConsulClient;
+import com.ecwid.consul.v1.agent.model.NewService;
 
 public class HeatingServer {
 
@@ -20,6 +27,8 @@ public class HeatingServer {
                 .build()
                 .start();
         System.out.println("暖气服务已在端口 " + port + " 上启动");
+        // Register server to Consul
+        registerToConsul();
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println("关闭gRPC暖气服务");
@@ -91,6 +100,50 @@ public class HeatingServer {
         }
 
         // 请根据需要实现其他RPC方法
+    }
+    //consul
+    private void registerToConsul() {
+        System.out.println("Registering server to Consul...");
+
+        // Load Consul configuration from light-service.properties file
+        Properties props = new Properties();
+        try (FileInputStream fis = new FileInputStream("src/main/resources/light-service.properties")) {
+            props.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
+
+        // Extract Consul configuration properties
+        String consulHost = props.getProperty("consul.host");
+        int consulPort = Integer.parseInt(props.getProperty("consul.port"));
+        String serviceName = props.getProperty("consul.service.name");
+        int servicePort = Integer.parseInt(props.getProperty("consul.service.port"));
+        String healthCheckInterval = props.getProperty("consul.service.healthCheckInterval");
+
+        // Get host address
+        String hostAddress;
+        try {
+            hostAddress = InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+            return;
+        }
+
+        // Create a Consul client
+        ConsulClient consulClient = new ConsulClient(consulHost, consulPort);
+
+        // Define service details
+        NewService newService = new NewService();
+        newService.setName(serviceName);
+        newService.setPort(servicePort);
+        newService.setAddress(hostAddress); // Set host address
+
+        // Register service with Consul
+        consulClient.agentServiceRegister(newService);
+
+        // Print registration success message
+        System.out.println("Server registered to Consul successfully. Host: " + hostAddress);
     }
 
     // 主方法，启动服务器实例

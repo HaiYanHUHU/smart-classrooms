@@ -25,6 +25,11 @@ public class LightClient {
         // 异步stub用于流式RPC调用
         this.asyncStub = LightServiceGrpc.newStub(channel);
     }
+    // 供GUI直接调用
+    public void toggleLight(boolean isOn) {
+        controlLights(isOn);
+    }
+
 
     // 关闭客户端channel
     public void shutdown() throws InterruptedException {

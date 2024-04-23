@@ -25,7 +25,10 @@ public class ProjectorClient {
         // 异步stub用于流式RPC调用
         this.asyncStub = ProjectorServiceGrpc.newStub(channel);
     }
-
+    //供GUI直接调用
+    public void toggleProjector(boolean isOn) {
+        controlProjectors(isOn);
+    }
     // 关闭客户端channel
     public void shutdown() throws InterruptedException {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
