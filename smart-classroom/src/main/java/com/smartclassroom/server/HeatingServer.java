@@ -96,7 +96,7 @@ public class HeatingServer {
     // 主方法，启动服务器实例
     public static void main(String[] args) throws IOException, InterruptedException {
         HeatingServer server = new HeatingServer();
-        server.start(8082); // 端口号可以根据实际情况进行调整
+        server.start(50051); // 端口号可以根据实际情况进行调整
         server.blockUntilShutdown();
     }
 }

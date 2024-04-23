@@ -93,7 +93,7 @@ public class ProjectorServer {
     // 主方法，启动服务器实例
     public static void main(String[] args) throws IOException, InterruptedException {
         ProjectorServer server = new ProjectorServer();
-        server.start(8081); // 端口号可以根据实际情况进行调整
+        server.start(9090); // 端口号可以根据实际情况进行调整
         server.blockUntilShutdown();
     }
 }
