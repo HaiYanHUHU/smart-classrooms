@@ -54,7 +54,7 @@ public class LightServer{
             // 这里需要添加获取灯光状态的实际逻辑
             // 以下是示例实现
             LightStatus status = LightStatus.newBuilder()
-                    .setName("教室前排灯")
+                    .setName("教室前排的灯")
                     .setIsOn(true)
                     .build();
             responseObserver.onNext(status);
