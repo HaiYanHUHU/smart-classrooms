@@ -19,7 +19,7 @@ public class SmartClassroomGUI extends JFrame {
         // 灯光状态
         JPanel lightPanel = new JPanel();
         lightPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        lightStatusLabel = new JLabel("灯光状态：未知");
+        lightStatusLabel = new JLabel("灯光状态：false");
         JToggleButton lightToggle = new JToggleButton("turn on");
         lightToggle.addActionListener(e -> {
             // TODO: 在这里添加与LightClient通信的代码
@@ -34,7 +34,7 @@ public class SmartClassroomGUI extends JFrame {
         // 投影仪状态
         JPanel projectorPanel = new JPanel();
         projectorPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        projectorStatusLabel = new JLabel("投影仪状态：未知");
+        projectorStatusLabel = new JLabel("投影仪状态：false");
         JToggleButton projectorToggle = new JToggleButton("turn on");
         projectorToggle.addActionListener(e -> {
             // TODO: 在这里添加与ProjectorClient通信的代码
@@ -49,7 +49,7 @@ public class SmartClassroomGUI extends JFrame {
         // 暖气状态
         JPanel heatingPanel = new JPanel();
         heatingPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        heatingStatusLabel = new JLabel("暖气状态：未知");
+        heatingStatusLabel = new JLabel("暖气状态：false");
         JToggleButton heatingToggle = new JToggleButton("turn on");
         heatingToggle.addActionListener(e -> {
             // TODO: 在这里添加与HeatingClient通信的代码

@@ -20,13 +20,13 @@ public class LightServer{
 
     private Server server;
 
-    // 启动服务，监听传入的端口
+    // start server
     public void start(int port) throws IOException {
         server = ServerBuilder.forPort(port)
                 .addService(new LightServiceImpl())
                 .build()
                 .start();
-        System.out.println("灯光服务已在端口 " + port + " 上启动");
+        System.out.println("Light service is up on port " + port);
         // Register server to Consul
         registerToConsul();
 
@@ -63,7 +63,7 @@ public class LightServer{
             // 这里需要添加获取灯光状态的实际逻辑
             // 以下是示例实现
             LightStatus status = LightStatus.newBuilder()
-                    .setName("教室前排的灯")
+                    .setName("LightName")
                     .setIsOn(true)
                     .build();
             responseObserver.onNext(status);
