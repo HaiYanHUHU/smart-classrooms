@@ -20,18 +20,18 @@ public class ProjectorServer {
 
     private Server server;
 
-    // 启动服务并监听指定端口
+    // start server
     public void start(int port) throws IOException {
         server = ServerBuilder.forPort(port)
                 .addService(new ProjectorServiceImpl())
                 .build()
                 .start();
-        System.out.println("投影仪服务已在端口 " + port + " 上启动");
+        System.out.println("Projector service is up on port  " + port);
         // Register server to Consul
         registerToConsul();
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            System.out.println("关闭gRPC投影仪服务");
+            System.out.println("Turn off the gRPC projector service");
             try {
                 ProjectorServer.this.stop();
             } catch (InterruptedException e) {
@@ -40,60 +40,61 @@ public class ProjectorServer {
         }));
     }
 
-    // 停止服务
+    // end service
     private void stop() throws InterruptedException {
         if (server != null) {
             server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
         }
     }
 
-    // 服务持续运行直到外部请求终止
+    // service continues to run until terminated by an external request
     public void blockUntilShutdown() throws InterruptedException {
         if (server != null) {
             server.awaitTermination();
         }
     }
 
-    // 实现proto文件中定义的投影仪服务
+    // service methods defined in the proto file
     private static class ProjectorServiceImpl extends ProjectorServiceGrpc.ProjectorServiceImplBase {
 
-        // 一元RPC方法：获取投影仪状态
+        // Unary RPC：get projector state
         @Override
         public void getProjectorStatus(GetProjectorStatusRequest req, StreamObserver<ProjectorStatus> responseObserver) {
-            // 这里应添加获取投影仪状态的实际逻辑
+            // need to add actual logic to get the state of the projector
+            //
             ProjectorStatus status = ProjectorStatus.newBuilder()
-                    .setName("主投影仪")
+                    .setName("ProjectorName")
                     .setIsOn(false)
                     .build();
             responseObserver.onNext(status);
             responseObserver.onCompleted();
         }
 
-        // 客户端流RPC方法：批量控制投影仪
+        // Client Streaming RPC：control of projector
         @Override
         public StreamObserver<ControlProjectorRequest> controlProjectors(StreamObserver<ProjectorControlResponse> responseObserver) {
             return new StreamObserver<>() {
-                // 当收到客户端的控制请求时
+                // receive control request from client
                 @Override
                 public void onNext(ControlProjectorRequest req) {
-                    // 这里应添加控制投影仪的实际逻辑
-                    System.out.println("收到控制投影仪请求：" + (req.getTurnOn() ? "开启" : "关闭"));
+                    // add the actual logic for controlling projector
+                    System.out.println("receive request to control projector:" + (req.getTurnOn() ? "turn on" : "turn off"));
                 }
 
                 @Override
                 public void onError(Throwable t) {
-                    System.err.println("控制投影仪时发生错误：" + t.getMessage());
+                    System.err.println("error occurs when control the projector" + t.getMessage());
                 }
 
                 @Override
                 public void onCompleted() {
-                    // 所有控制请求已处理完毕
+                    //  all control requests have been processed
                     ProjectorControlResponse response = ProjectorControlResponse.newBuilder()
                             .setSuccess(true)
                             .build();
                     responseObserver.onNext(response);
                     responseObserver.onCompleted();
-                    System.out.println("投影仪控制流程完成");
+                    System.out.println("projector control process complete");
                 }
             };
         }
@@ -145,10 +146,10 @@ public class ProjectorServer {
     }
 
 
-    // 主方法，启动服务器实例
+    // main method, start server
     public static void main(String[] args) throws IOException, InterruptedException {
         ProjectorServer server = new ProjectorServer();
-        server.start(9090); // 端口号可以根据实际情况进行调整
+        server.start(9090); // port 9090
         server.blockUntilShutdown();
     }
 }

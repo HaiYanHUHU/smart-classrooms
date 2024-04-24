@@ -40,7 +40,7 @@ public class LightServer{
         }));
     }
 
-    // end of service
+    // end service
     private void stop() throws InterruptedException {
         if (server != null) {
             server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
@@ -61,7 +61,7 @@ public class LightServer{
         @Override
         public void getLightStatus(GetLightStatusRequest req, StreamObserver<LightStatus> responseObserver) {
             // need to add actual logic to get the state of the light
-            // realize
+            //
             LightStatus status = LightStatus.newBuilder()
                     .setName("LightName")
                     .setIsOn(true)
@@ -77,13 +77,13 @@ public class LightServer{
                 // receive control request from client
                 @Override
                 public void onNext(ControlLightRequest req) {
-                    // add the actual logic for controlling lights
+                    // add the actual logic for controlling light
                     System.out.println("receive request to control light:" + (req.getTurnOn() ? "turn on" : "turn off"));
                 }
 
                 @Override
                 public void onError(Throwable t) {
-                    System.err.println("an error occurs when control the light:" + t.getMessage());
+                    System.err.println("error occurs when control the light:" + t.getMessage());
                 }
 
                 @Override
@@ -146,7 +146,7 @@ public class LightServer{
     // main method, start server
     public static void main(String[] args) throws IOException, InterruptedException {
         LightServer server = new LightServer();
-        server.start(8080); // port
+        server.start(8080); // port 8080
         server.blockUntilShutdown();
     }
 }
