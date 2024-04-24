@@ -54,7 +54,7 @@ public class LightServer{
         }
     }
 
-    // service methods defined in the proto file
+    // service methods defined in the proto
     private static class LightServiceImpl extends LightServiceGrpc.LightServiceImplBase {
 
         // Unary RPC：get light state

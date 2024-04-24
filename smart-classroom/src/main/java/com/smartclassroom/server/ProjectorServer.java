@@ -26,7 +26,7 @@ public class ProjectorServer {
                 .addService(new ProjectorServiceImpl())
                 .build()
                 .start();
-        System.out.println("Projector service is up on port  " + port);
+        System.out.println("Projector service is up on port " + port);
         // Register server to Consul
         registerToConsul();
 
@@ -54,7 +54,7 @@ public class ProjectorServer {
         }
     }
 
-    // service methods defined in the proto file
+    // service methods defined in the proto
     private static class ProjectorServiceImpl extends ProjectorServiceGrpc.ProjectorServiceImplBase {
 
         // Unary RPC：get projector state
