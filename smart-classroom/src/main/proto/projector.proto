@@ -5,30 +5,30 @@ option java_package = "com.smartclassroom";
 option java_outer_classname = "ProjectorProto";
 
 
-// 投影仪服务接口定义
+//  Projector Service Interface Definition
 service ProjectorService {
-    // 一元 RPC：获取投影仪状态
+    // Unary RPC：get projector state
     rpc GetProjectorStatus (GetProjectorStatusRequest) returns (ProjectorStatus) {}
 
-    // 客户端流式 RPC：批量控制投影仪
+    // Client Streaming RPC：control of projector
     rpc ControlProjectors (stream ControlProjectorRequest) returns (ProjectorControlResponse) {}
 
 }
 
-// 获取投影仪状态的请求消息
+// request message to get projector status
 message GetProjectorStatusRequest {}
 
-// 投影仪状态消息
+// projector status message
 message ProjectorStatus {
-    string name = 1; // 投影仪名称
-    bool is_on = 2;  // 投影仪是否开启
+    string name = 1; // projector name
+    bool is_on = 2;  // projector on or off
 }
-// 控制投影仪的请求消息
+// request message for control of projector
 message ControlProjectorRequest {
-    bool turn_on = 1; // 控制指令：true 开启，false 关闭
+    bool turn_on = 1;
 }
-// 控制投影仪的响应消息
+// response message for control projector
 message ProjectorControlResponse {
-    bool success = 1; // 控制操作是否成功
+    bool success = 1;
 }
 

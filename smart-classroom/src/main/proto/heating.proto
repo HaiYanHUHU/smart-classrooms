@@ -5,18 +5,18 @@ option java_package = "com.smartclassroom";
 option java_outer_classname = "HeatingProto";
 
 
-// 暖气服务定义
+// Heating Service Interface Definition
 service HeatingService {
-    // 一元 RPC：获取暖气状态
+    // Unary RPC：get heating state
     rpc GetHeatingStatus (GetHeatingStatusRequest) returns (HeatingStatus);
 
-    // 服务端流式 RPC：持续发送暖气状态
+    // Server Streaming RPC：Continuously send heating status
     rpc StreamHeatingEvents (HeatingEventsRequest) returns (stream HeatingStatus);
 
-    // 客户端流式 RPC：接收多个控制命令并返回统一响应
+    // Client Streaming RPC
     rpc ControlHeating (stream ControlHeatingRequest) returns (HeatingControlResponse);
 
-    // 双向流 RPC：暖气状态和控制命令双向传输
+    // Bi-directional Stream RPC
     rpc MonitorHeatingStream (stream MonitorHeatingRequest) returns (stream HeatingStatus);
 }
 
@@ -25,11 +25,11 @@ message HeatingEventsRequest {}
 message HeatingStatus {
     string name = 1;
     bool is_on = 2;
-    double temperature = 3; // 暖气当前温度
+    double temperature = 3; // current temperature of the heating
 }
 message ControlHeatingRequest {
     bool turn_on = 1;
-    double set_temperature = 2; // 设置暖气温度
+    double set_temperature = 2; // setting the heating temperature
 }
 message HeatingControlResponse {
     bool success = 1;
