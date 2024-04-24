@@ -31,7 +31,7 @@ public class LightServer{
         registerToConsul();
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            System.out.println("关闭gRPC灯光服务");
+            System.out.println("Turn off the gRPC light service");
             try {
                 LightServer.this.stop();
             } catch (InterruptedException e) {
@@ -40,28 +40,28 @@ public class LightServer{
         }));
     }
 
-    // 停止服务
+    // end of service
     private void stop() throws InterruptedException {
         if (server != null) {
             server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
         }
     }
 
-    // 服务持续运行直到被外部请求终止
+    // service continues to run until terminated by an external request
     public void blockUntilShutdown() throws InterruptedException {
         if (server != null) {
             server.awaitTermination();
         }
     }
 
-    // 实现定义在proto文件中的服务方法
+    // service methods defined in the proto file
     private static class LightServiceImpl extends LightServiceGrpc.LightServiceImplBase {
 
-        // 一元RPC方法：获取灯光状态
+        // Unary RPC：get light state
         @Override
         public void getLightStatus(GetLightStatusRequest req, StreamObserver<LightStatus> responseObserver) {
-            // 这里需要添加获取灯光状态的实际逻辑
-            // 以下是示例实现
+            // need to add actual logic to get the state of the light
+            // realize
             LightStatus status = LightStatus.newBuilder()
                     .setName("LightName")
                     .setIsOn(true)
@@ -70,31 +70,31 @@ public class LightServer{
             responseObserver.onCompleted();
         }
 
-        // 客户端流RPC方法：批量控制灯光
+        // Client Streaming RPC：control of light
         @Override
         public StreamObserver<ControlLightRequest> controlLights(StreamObserver<LightControlResponse> responseObserver) {
             return new StreamObserver<>() {
-                // 当收到客户端的控制请求时
+                // receive control request from client
                 @Override
                 public void onNext(ControlLightRequest req) {
-                    // 这里需要添加控制灯光的实际逻辑
-                    System.out.println("收到控制灯光请求：" + (req.getTurnOn() ? "开启" : "关闭"));
+                    // add the actual logic for controlling lights
+                    System.out.println("receive request to control light:" + (req.getTurnOn() ? "turn on" : "turn off"));
                 }
 
                 @Override
                 public void onError(Throwable t) {
-                    System.err.println("控制灯光时发生错误：" + t.getMessage());
+                    System.err.println("an error occurs when control the light:" + t.getMessage());
                 }
 
                 @Override
                 public void onCompleted() {
-                    // 所有的控制请求都已处理完毕
+                    // all control requests have been processed
                     LightControlResponse response = LightControlResponse.newBuilder()
                             .setSuccess(true)
                             .build();
                     responseObserver.onNext(response);
                     responseObserver.onCompleted();
-                    System.out.println("灯光控制流程完成");
+                    System.out.println("light control process complete");
                 }
             };
         }
@@ -143,10 +143,10 @@ public class LightServer{
         // Print registration success message
         System.out.println("Server registered to Consul successfully. Host: " + hostAddress);
     }
-    // 主方法，启动服务器实例
+    // main method, start server
     public static void main(String[] args) throws IOException, InterruptedException {
         LightServer server = new LightServer();
-        server.start(8080); // 可以选择不同的端口号
+        server.start(8080); // port
         server.blockUntilShutdown();
     }
 }
