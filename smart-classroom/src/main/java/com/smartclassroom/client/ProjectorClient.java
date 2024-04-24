@@ -13,44 +13,44 @@ public class ProjectorClient {
     private final ProjectorServiceGrpc.ProjectorServiceBlockingStub blockingStub;
     private final ProjectorServiceGrpc.ProjectorServiceStub asyncStub;
 
-    // 构造函数，初始化channel和stub
+    // Constructor, initialize channel and stub
     public ProjectorClient(String host, int port) {
-        // 构建连接到gRPC服务器的channel
+        // Building a channel to connect to a gRPC server
         this.channel = ManagedChannelBuilder.forAddress(host, port)
-                .usePlaintext() // 在这里不使用TLS加密
+                .usePlaintext()
                 .build();
 
-        // 阻塞stub用于一元RPC调用
+        //
         this.blockingStub = ProjectorServiceGrpc.newBlockingStub(channel);
-        // 异步stub用于流式RPC调用
+        //
         this.asyncStub = ProjectorServiceGrpc.newStub(channel);
     }
-    //供GUI直接调用
+    //GUI
     public void toggleProjector(boolean isOn) {
         controlProjectors(isOn);
     }
-    // 关闭客户端channel
+    // close the client channel
     public void shutdown() throws InterruptedException {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
 
-    // 发送获取投影仪状态的请求
+    // Send a request to get the projector status
     public void getProjectorStatus() {
-        // 构建请求
+        //
         GetProjectorStatusRequest request = GetProjectorStatusRequest.getDefaultInstance();
         ProjectorStatus response;
 
         try {
-            // 调用服务器方法
+            // get server methods
             response = blockingStub.getProjectorStatus(request);
-            System.out.println("投影仪状态: 名称=" + response.getName() + ", 是否开启=" + response.getIsOn());
+            System.out.println("projector Status: name=" + response.getName() + ",  Status=" + response.getIsOn());
         } catch (RuntimeException e) {
-            System.err.println("RPC调用失败: " + e.getMessage());
+            System.err.println("RPC get fail:  " + e.getMessage());
             return;
         }
     }
 
-    // 发送控制投影仪的请求
+    // Send request to control the lights
     public void controlProjectors(boolean turnOn) {
         ControlProjectorRequest request = ControlProjectorRequest.newBuilder()
                 .setTurnOn(turnOn)
@@ -59,38 +59,38 @@ public class ProjectorClient {
         StreamObserver<ProjectorControlResponse> responseObserver = new StreamObserver<ProjectorControlResponse>() {
             @Override
             public void onNext(ProjectorControlResponse response) {
-                System.out.println("收到投影仪控制响应: 操作成功=" + response.getSuccess());
+                System.out.println("projector control response received: operation success=" + response.getSuccess());
             }
 
             @Override
             public void onError(Throwable t) {
-                System.err.println("投影仪控制失败: " + t.getMessage());
+                System.err.println("projector control failed: " + t.getMessage());
             }
 
             @Override
             public void onCompleted() {
-                System.out.println("投影仪控制请求完成");
+                System.out.println("projector end");
             }
         };
 
-        // 异步发送流式请求
+        // requests
         StreamObserver<ControlProjectorRequest> requestObserver = asyncStub.controlProjectors(responseObserver);
         requestObserver.onNext(request);
         requestObserver.onCompleted();
     }
 
-    // 客户端主方法，用于演示客户端调用
+    //
     public static void main(String[] args) throws InterruptedException {
-        // 服务器地址和端口
+        // server address and port
         ProjectorClient client = new ProjectorClient("localhost", 9090);
         try {
-            // 获取投影仪状态
+            // get projector status
             client.getProjectorStatus();
-            // 控制投影仪
-            client.controlProjectors(true); // 开启投影仪
-            client.controlProjectors(false); // 关闭投影仪
+            // control projector
+            client.controlProjectors(true); // true
+            client.controlProjectors(false); // false
         } finally {
-            // 关闭客户端
+            // close client
             client.shutdown();
         }
     }
