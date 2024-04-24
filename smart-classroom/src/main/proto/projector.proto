@@ -5,7 +5,7 @@ option java_package = "com.smartclassroom";
 option java_outer_classname = "ProjectorProto";
 
 
-//  Projector Service Interface Definition
+//  projector service interface definition
 service ProjectorService {
     // Unary RPC：get projector state
     rpc GetProjectorStatus (GetProjectorStatusRequest) returns (ProjectorStatus) {}

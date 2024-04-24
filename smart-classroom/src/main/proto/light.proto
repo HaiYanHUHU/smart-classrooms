@@ -5,7 +5,7 @@ option java_package = "com.smartclassroom";
 option java_outer_classname = "LightProto";
 
 
-// Light Service Interface Definition
+// light service interface definition
 service LightService {
     // Unary RPC：get light state
     rpc GetLightStatus (GetLightStatusRequest) returns (LightStatus) {}

@@ -5,7 +5,7 @@ option java_package = "com.smartclassroom";
 option java_outer_classname = "HeatingProto";
 
 
-// Heating Service Interface Definition
+// heating service interface definition
 service HeatingService {
     // Unary RPC：get heating state
     rpc GetHeatingStatus (GetHeatingStatusRequest) returns (HeatingStatus);
